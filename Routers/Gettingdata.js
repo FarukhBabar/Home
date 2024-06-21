@@ -5,7 +5,8 @@ import { BatteriesDAta,FirstaidDAta,FirstaidFree,FirstaidDelitem,Firstaidsingl,S
 import { CandelesDAta, CandelesFree, Candelessingl, CarpoDAta, CarpoFree, Carposingl, CraftpoDAta, CraftpoDelitem, CraftpoFree, Craftposingl, DisposiblDAta, DisposiblDelitem, DisposiblFree, Disposiblsingl, DiytoolsDAta, DiytoolsDelitem, DiytoolsFree, Diytoolssingl, FoodpoDAta, FoodpoDelitem, FoodpoFree, Foodposingl, HoiseryDAta, HoiseryDelitem, HoiseryFree, Hoiserysingl, HouseholdclDAta, HouseholdclDelitem, HouseholdclFree, Householdclsingl, HouseholdprDAta, HouseholdprDelitem, HouseholdprFree, Householdprsingl, KitchenwearpDAta, KitchenwearpDelitem, KitchenwearpFree, Kitchenwearpsingl, LightergasDAta, LightergasDelitem, LightergasFree, Lightergassingl, LoundryironDAta, LoundryironDelitem, LoundryironFree, Loundryironsingl, PestconDAta, PestconDelitem, PestconFree, Pestconsingl, PotoyDAta, PotoyDelitem, PotoyFree, Potoysingl, ReadingDAta, ReadingDelitem, ReadingFree, Readingsingl, ShoeDAta, ShoeDelitem, ShoeFree, Shoesingl, StationeyDAta, StationeyDelitem, StationeyFree, Stationeysingl } from "../Controller/Pondlinegetting.js";
 import { BagslDAta, BagslDelitem, BagslFree, Bagslsingl, BasketstDAta, BasketstDelitem, BasketstFree, Basketstsingl, GlovesDAta, GlovesDelitem, GlovesFree, Glovessingl, LuggageDAta, LuggageDelitem, LuggageFree, Luggagesingl, MopsDAta, MopsDelitem, MopsFree, Mopssingl, SpongeDAta, SpongeDelitem, SpongeFree, Spongesingl } from "../Controller/cleaningmatterial/Cleaninggetting.js";
 import { BarrientDAta, BarrientDelitem, BarrientFree, Barrientsingl, BartolinDAta, BartolinDelitem, BartolinFree, Bartolinsingl, BirbrandFree, BirdbrandDAta, BirdbrandDelitem, Birdbrandsingl, BlackDAta, BlackDelitem, BlackFree, Blacksingl, BonitDAta, BonitDelitem, BonitFree, Bonitsingl, BostikDAta, BostikDelitem, BostikFree, Bostiksingl, BriwaxDAta, BriwaxDelitem, BriwaxFree, Briwaxsingl, BrookDAta, BrookDelitem, BrookFree, Brooksingl, CarplanDAta, CarplanDelitem, CarplanFree, Carplansingl, CarproDAta, CarproDelitem, CarproFree, Carprosingl, ChomisDAta, ChomisDelitem, ChomisFree, Chomissingl, CommandDAta, CommandDelitem, CommandFree, Commandsingl, CoralDAta, CoralDelitem, CoralFree, Coralsingl, CrownDAta, CrownDelitem, CrownFree, Crownsingl, DarperDAta, DarperDelitem, DarperFree, Darpersingl, DektonDAta, DektonDelitem, DektonFree, Dektonsingl, DemsumDAta, DemsumDelitem, DemsumFree, Demsumsingl, EdcoDAta, EdcoDelitem, EdcoFree, Edcosingl, EverDAta, EverDelitem, EverFree, Eversingl, ExitexDAta, ExitexDelitem, ExitexFree, Exitexsingl, FitDAta, FitDelitem, FitFree, Fitsingl, GasDAta, GasDelitem, GasFree, Gassingl, GlobalDAta, GlobalDelitem, GlobalFree, Globalsingl, GorilaDAta, GorilaDelitem, GorilaFree, Gorilasingl, HagesanDAta, HagesanDelitem, HagesanFree, Hagesansingl, HardwareDAta, HardwareDelitem, HardwareFree, Hardwaresingl, HarrisDAta, HarrisDelitem, HarrisFree, Harrissingl, HilkaAta, HilkaDelitem, HilkaFree, Hilkasingl, HumnrolDAta, HumnrolDelitem, HumnrolFree, Humnrolsingl, JbwelDAta, JbwelDelitem, JbwelFree, Jbwelsingl, KilrockDAta, KilrockDelitem, KilrockFree, Kilrocksingl, LadderDAta, LadderDelitem, LadderFree, Laddersingl, LocktileDAta, LocktileDelitem, LocktileFree, Locktilesingl } from "../Controller/Diy/Diygeeting.js";
-import { LynwoodDAta, LynwoodDelitem, LynwoodFree, Lynwoodsingl } from "../Controller/Diy/Diygettingto.js";
+import { LynwoodDAta, LynwoodDelitem, LynwoodFree, Lynwoodsingl, OxfordDAta, OxfordDelitem, OxfordFree, Oxfordsingl, PestcoDAta, PestcoDelitem, PestcoFree, Pestcontsingl, PlasplugDAta, PlasplugDelitem, PlasplugFree, Plasplugsingl, PrimacarDAta, PrimacarDelitem, PrimacarFree, Primacarsingl, RolsonDAta, RolsonDelitem, RolsonFree, Rolsonsingl, RonsealDAta, RonsealDelitem, RonsealFree, Ronsealsingl, RustinsDAta, RustinsDelitem, RustinsFree, Rustinssingl, SecrupDAta, SecrupDelitem, SecrupFree, Secrupsingl, SecuritDAta, SecuritDelitem, SecuritFree, Securitsingl, ShortageDAta, ShortageDelitem, ShortageFree, Shortagesingl, SoudalDAta, SoudalDelitem, SoudalFree, Soudalsingl, StarpackDAta, StarpackDelitem, StarpackFree, Starpacksingl, SterlingDAta, SterlingDelitem, SterlingFree, Sterlingsingl, tableauDAta, tableauDelitem, tableauFree, tableausingl } from "../Controller/Diy/Diygettingto.js";
+import { Rolsonsiglget } from "../Controller/Diy/Diypostto.js";
 
 const router = express.Router()
 
@@ -669,8 +670,75 @@ router.get("/lynwoodfreedelivery", LynwoodFree)
 router.delete("/lynwooduserid/:id", LynwoodDelitem)
 router.get('/lynwoodsingle/:id' , Lynwoodsingl)
 
+router.get("/oxforduser", OxfordDAta )
+router.get("/oxfordfreedelivery", OxfordFree)
+router.delete("/oxforduserid/:id", OxfordDelitem)
+router.get('/oxfordsingle/:id' , Oxfordsingl)
 
+router.get("/pestcouser", PestcoDAta )
+router.get("/pestcofreedelivery", PestcoFree)
+router.delete("/pestcouserid/:id", PestcoDelitem)
+router.get('/pestcosingle/:id' , Pestcontsingl)
 
+router.get("/plaspluguser", PlasplugDAta )
+router.get("/plasplugfreedelivery", PlasplugFree)
+router.delete("/plaspluguserid/:id", PlasplugDelitem)
+router.get('/plasplugsingle/:id' , Plasplugsingl)
+
+router.get("/primacaruser", PrimacarDAta )
+router.get("/primacarfreedelivery", PrimacarFree)
+router.delete("/primacaruserid/:id", PrimacarDelitem)
+router.get('/primacarsingle/:id' , Primacarsingl)
+
+router.get("/rolsonuser", RolsonDAta )
+router.get("/rolsonfreedelivery", RolsonFree)
+router.delete("/rolsonuserid/:id", RolsonDelitem)
+router.get('/rolsonsingle/:id' , Rolsonsingl)
+
+router.get("/ronsealuser", RonsealDAta )
+router.get("/ronsealfreedelivery", RonsealFree)
+router.delete("/ronsealuserid/:id", RonsealDelitem)
+router.get('/ronsealsingle/:id' , Ronsealsingl)
+
+router.get("/rustinsuser", RustinsDAta )
+router.get("/rustinsfreedelivery", RustinsFree)
+router.delete("/rustinsuserid/:id", RustinsDelitem)
+router.get('/rustinssingle/:id' , Rustinssingl)
+
+router.get("/securituser", SecuritDAta )
+router.get("/securitfreedelivery", SecuritFree)
+router.delete("/securituserid/:id", SecuritDelitem)
+router.get('/securitsingle/:id' , Securitsingl)
+
+router.get("/secupuser", SecrupDAta )
+router.get("/secupfreedelivery", SecrupFree)
+router.delete("/secupuserid/:id", SecrupDelitem)
+router.get('/secupsingle/:id' , Secrupsingl)
+
+router.get("/shortageuser", ShortageDAta )
+router.get("/shortagefreedelivery", ShortageFree)
+router.delete("/shortageuserid/:id", ShortageDelitem)
+router.get('/shortagesingle/:id' , Shortagesingl)
+
+router.get("/soudaluser", SoudalDAta )
+router.get("/soudalfreedelivery", SoudalFree)
+router.delete("/soudaluserid/:id", SoudalDelitem)
+router.get('/soudalsingle/:id' , Soudalsingl)
+
+router.get("/starpackuser", StarpackDAta )
+router.get("/starpackfreedelivery", StarpackFree)
+router.delete("/starpackuserid/:id", StarpackDelitem)
+router.get('/starpacksingle/:id' , Starpacksingl)
+
+router.get("/sterlinguser", SterlingDAta )
+router.get("/sterlingfreedelivery", SterlingFree)
+router.delete("/sterlinguserid/:id", SterlingDelitem)
+router.get('/sterlingsingle/:id' , Sterlingsingl)
+
+router.get("/tableauuser", tableauDAta )
+router.get("/tableaufreedelivery", tableauFree)
+router.delete("/tableauuserid/:id", tableauDelitem)
+router.get('/tableausingle/:id' , tableausingl)
 
 
 

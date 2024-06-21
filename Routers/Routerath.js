@@ -4,13 +4,14 @@ import multer from "multer"
 import express from "express"
 import { Artcraftsingl, Artificalsingl, BBqsingl, Babeysingl, Babysingl, Bakewaresingl, Baloonsingl, Bannersingl, Barewaresingl, Birdcaresingl, Birdssingl, Bleechsingl, BooksFree, Bookssingl, Bouquetssingl, Brushwaresingl, Cakessingl, Candelsingl, Carsingl, Catsingl, Cottonsingl, Crystalsingl, DusterDAta, Dustersingl, Flasksingl, Foodconsingl, Freshnsingl, Furnituresingl, Kidsssingl, Matessingl, Pumpssingl, Sportssingl, kidsplassingl } from "../Controller/Gettingsecond.js"
 import { Bakewareproducts, Bakewareupl, Barewareproducts,Catproducts, Barewareupl, Birdsproducts, Birdsupl, Catupl, Babeyproducts, Babeyupl, Kidsproducts, Kidsupl, BBqproducts, BBqupl, Birdcareproducts, Birdcareupl, Baloonproducts, Baloonupl, Pumpsproducts, Pumpsupl, Bannerproducts, Bannerupl, Crystalproducts, Crystalupl, Cakesproducts, Cakesupl, Furnitureproducts, Furnitureupl, Matesproducts, Matesupl, Candelproducts, Candelupl, Stproducts, Stupl, Stsiglget, Foodconproducts, Foodconupl, kidsplasproducts, kidsplasupl, Sportsproducts, Sportsupl, Flaskproducts, Flaskupl, Artcraftproducts, Artcraftupl, Booksproducts, Booksupl, Brushwareproducts, Brushwareupl, Dusterupl, Dusterproducts, Artificalproducts, Artificalupl, Bouquetsproducts, Bouquetsupl } from "../Controller/Authsecond.js"
-import { Candelesproducts, Candelessiglget, Candelesupl, Carpoproducts, Carpoupl, Craftpoproducts, Craftpoupl, Disposiblproducts, Disposiblsiglget, Disposiblsupl, Diytoolsproducts, Diytoolsupl, Foodpoproducts, Foodposiglget, Foodpoupl, Hoiseryproducts, Hoiseryupl, Householdclproducts, Householdclupl, Householdprproducts, Householdprupl, Kitchenwearpproducts, Kitchenwearpupl, Lightergasproducts, Lightergasupl, Loundryironproducts, Loundryironupl, Pestconproducts, Pestconupl, Potoyproducts, Potoysiglget, Potoyupl, Readingproducts, Readingupl, Shoeproducts, Shoeupl, Stationeryproducts, Stationeryupl } from "../Controller/Poundlinecat.js"
+import { Candelesproducts, Candelessiglget, Candelesupl, Carpoproducts, Carpoupl, Craftpoproducts, Craftpoupl, Disposiblproducts, Disposiblsiglget, Disposiblsupl, Diytoolsproducts, Diytoolsupl, Foodpoproducts, Foodposiglget, Foodpoupl, Hoiseryproducts, Hoiseryupl, Householdclproducts, Householdclupl, Householdprproducts, Householdprupl, Kitchenwearpproducts, Kitchenwearpupl, Lightergasproducts, Lightergasupl, Loundryironproducts, Loundryironupl, Pestconproducts, Pestconsiglget, Pestconupl, Potoyproducts, Potoysiglget, Potoyupl, Readingproducts, Readingupl, Shoeproducts, Shoeupl, Stationeryproducts, Stationeryupl } from "../Controller/Poundlinecat.js"
 import {  Carposingl, Craftposingl, Diytoolssingl, Hoiserysingl, Householdclsingl, Householdprsingl, Kitchenwearpsingl, Lightergassingl, Loundryironsingl, Pestconsingl, Readingsingl, Shoesingl, Stationeysingl } from "../Controller/Pondlinegetting.js"
 import { Bagslproducts, Bagslupl, Basketstproducts, Basketstupl, Glovesproducts, Glovesupl, Luggageproducts, Luggagesiglget, Luggageupl, Mopsproducts, Mopsupl, Spongeproducts, Spongeupl } from "../Controller/cleaningmatterial/Cleaningcat.js"
 import { Bagslsingl, Basketstsingl, Glovessingl, Mopssingl, Spongesingl } from "../Controller/cleaningmatterial/Cleaninggetting.js"
 import { Barrientproducts, Barrientupl, Bartolinproducts, Bartolinupl, Birdbrandproducts, Birdbrandupl, Blackproducts, Blackupl, Bonitproducts, Bonitupl, Bostikproducts, Bostikupl, Briwaxproducts, Briwaxsiglget, Briwaxupl, Brookproducts, Brooksiglget, Brookupl, Carplanproducts, Carplansiglget, Carplanupl, Carproproducts, Carprosiglget, Carproupl, Chomisproducts, Chomissiglget, Chomisupl, Commandproducts, Commandsiglget, Commandupl, Coralproducts, Coralsiglget, Coralupl, Crownproducts, Crownsiglget, Crownupl, Darperproducts, Darpersiglget, Darperupl, Dektonproducts, Dektonsiglget, Dektonupl, Demsumproducts, Demsumsiglget, Demsumupl, Edcoproducts, Edcosiglget, Edcoupl, Everproducts, Eversiglget, Everupl, Exitexproducts, Exitexsiglget, Exitexupl, Fitproducts, Fitsiglget, Fitupl, Gasproducts, Gassiglget, Gasupl, Globalproducts, Globalsiglget, Globalupl, Gorilaproducts, Gorilasiglget, Gorilaupl, Hagesanproducts, Hagesansiglget, Hagesanupl, Hardwareproducts, Hardwaresiglget, Hardwareupl, Harrisproducts, Harrissiglget, Harrisupl, Hilkaproducts, Hilkasiglget, Hilkaupl, Humnrolproducts, Humnrolsiglget, Humnrolupl, Jbwelproducts, Jbwelsiglget, Jbwelupl, Kilrockproducts, Kilrocksiglget, Kilrockupl, Ladderproducts, Laddersiglget, Ladderupl, Locktileproducts, Locktilesiglget, Locktileupl } from "../Controller/Diy/Diypost.js"
 import { Barrientsingl, Bartolinsingl, Birdbrandsingl, Blacksingl, Bonitsingl, Bostiksingl, Laddersingl } from "../Controller/Diy/Diygeeting.js"
-import { Lynwoodproducts, Lynwoodsiglget, Lynwoodupl } from "../Controller/Diy/Diypostto.js"
+import { Lynwoodproducts, Lynwoodsiglget, Lynwoodupl, Oxfordproducts, Oxfordsiglget, Oxfordupl, Pestcoproducts, Pestcosiglget, Pestcoupl, Plasplugproducts, Plasplugsiglget, Plasplugupl, Primacarproducts, Primacarsiglget, Primacarupl, Rolsonproducts, Rolsonsiglget, Rolsonupl, Ronsealproducts, Ronsealsiglget, Ronsealupl, Rustinsproducts, Rustinssiglget, Rustinsupl, Secrupproducts, Secrupsiglget, Secrupupl, Securitproducts, Securitsiglget, Securitupl, Shortageproducts, Shortagesiglget, Shortageupl, Soudalproducts, Soudalsiglget, Soudalupl, Starpackproducts, Starpacksiglget, Starpackupl, Sterlingproducts, Sterlingsiglget, Sterlingupl, tableauproducts, tableausiglget, tableauupl } from "../Controller/Diy/Diypostto.js"
+import { PlasplugDAta } from "../Controller/Diy/Diygettingto.js"
 
  const router = express.Router()
 
@@ -546,7 +547,59 @@ import { Lynwoodproducts, Lynwoodsiglget, Lynwoodupl } from "../Controller/Diy/D
  router.put("/lynwoodsingle/:id",uploads.single('image'), Lynwoodupl)
  router.get("/lynwoodsingle/:id" , Lynwoodsiglget)
 
+ router.post("/oxfordproducts" ,uploads.single('image') , Oxfordproducts )
+ router.put("/oxfordsingle/:id",uploads.single('image'), Oxfordupl)
+ router.get("/oxfordsingle/:id" , Oxfordsiglget)
 
+ router.post("/pestcoproducts" ,uploads.single('image') , Pestcoproducts )
+ router.put("/pestcosingle/:id",uploads.single('image'), Pestcoupl)
+ router.get("/pestcosingle/:id" , Pestcosiglget)
 
+ router.post("/plasplugproducts" ,uploads.single('image') , Plasplugproducts )
+ router.put("/plasplugsingle/:id",uploads.single('image'), Plasplugupl)
+ router.get("/plasplugsingle/:id" , Plasplugsiglget)
 
+ router.post("/primacarproducts" ,uploads.single('image') , Primacarproducts )
+ router.put("/primacarsingle/:id",uploads.single('image'), Primacarupl)
+ router.get("/primacarsingle/:id" , Primacarsiglget)
+
+ router.post("/rolsonproducts" ,uploads.single('image') , Rolsonproducts )
+ router.put("/rolsonsingle/:id",uploads.single('image'), Rolsonupl)
+ router.get("/rolsonsingle/:id" , Rolsonsiglget)
+
+ router.post("/ronsealproducts" ,uploads.single('image') , Ronsealproducts )
+ router.put("/ronsealsingle/:id",uploads.single('image'), Ronsealupl)
+ router.get("/ronsealsingle/:id" , Ronsealsiglget)
+
+ router.post("/rustinsproducts" ,uploads.single('image') , Rustinsproducts )
+ router.put("/rustinssingle/:id",uploads.single('image'), Rustinsupl)
+ router.get("/rustinssingle/:id" , Rustinssiglget)
+
+ router.post("/securitproducts" ,uploads.single('image') , Securitproducts )
+ router.put("/securitsingle/:id",uploads.single('image'), Securitupl)
+ router.get("/securitsingle/:id" , Securitsiglget)
+
+ router.post("/secupproducts" ,uploads.single('image') , Secrupproducts )
+ router.put("/secupsingle/:id",uploads.single('image'), Secrupupl)
+ router.get("/secupsingle/:id" , Secrupsiglget)
+
+ router.post("/shortageproducts" ,uploads.single('image') , Shortageproducts )
+ router.put("/shortagesingle/:id",uploads.single('image'), Shortageupl)
+ router.get("/shortagesingle/:id" , Shortagesiglget)
+
+ router.post("/soudalproducts" ,uploads.single('image') , Soudalproducts )
+ router.put("/soudalsingle/:id",uploads.single('image'), Soudalupl)
+ router.get("/soudalsingle/:id" , Soudalsiglget)
+
+ router.post("/starpackproducts" ,uploads.single('image') , Starpackproducts )
+ router.put("/starpacksingle/:id",uploads.single('image'), Starpackupl)
+ router.get("/starpacksingle/:id" , Starpacksiglget)
+ 
+ router.post("/sterlingproducts" ,uploads.single('image') , Sterlingproducts )
+ router.put("/sterlingsingle/:id",uploads.single('image'), Sterlingupl)
+ router.get("/sterlingsingle/:id" , Sterlingsiglget)
+ 
+ router.post("/tableauproducts" ,uploads.single('image') , tableauproducts )
+ router.put("/tableausingle/:id",uploads.single('image'), tableauupl)
+ router.get("/tableausingle/:id" , tableausiglget)
  export default router
