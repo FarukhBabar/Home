@@ -28,6 +28,9 @@ import HarrisSchema  from '../../config/Diy/Harris.js'
 import HilkaSchema from '../../config/Diy/Hilka.js'
 import HumnrolSchema from '../../config/Diy/Humnrol.js'
 import JbwelSchema from '../../config/Diy/Jbwel.js'
+import KilrockSchema from '../../config/Diy/Kilrock.js'
+import LadderSchema from '../../config/Diy/Ladder.js'
+import LocktileSchema from '../../config/Diy/Locktile.js'
 export const Barrientproducts= async(req ,res)=>{
     try {
         let  {name , title , price } = req.body 
@@ -1617,3 +1620,162 @@ export const Jbwelsiglget=  async (req,res)=>{
     let result = await  JbwelSchema.findOne({_id:req.params.id})
     res.send(result)
   }
+      
+  export const Kilrockproducts= async(req ,res)=>{
+    try {
+        let  {name , title , price } = req.body 
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const newuser = await new  KilrockSchema({
+            name,
+            title,
+            price,
+            image: profilepicturePath,
+        }).save() 
+
+       
+        if(newuser){
+            return res.status(200).send({Message:"product added Successfully"})
+        }else{
+            console.log(error)
+        }
+    } catch (error) {
+        
+    }
+}
+export const Kilrockupl= async (req, res) => {
+    try {
+        let { name, title, price } = req.body;
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const product = await  KilrockSchema.findOne({ _id: req.params.id });
+        if (!product) {
+            return res.status(404).json({ error: "Product not found" });
+        }
+        product.name = name || product.name;
+        product.title = title || product.title;
+        product.price = price || product.price;
+        if (profilepicturePath) {
+            product.image = profilepicturePath;
+        }
+        const updatedProduct = await product.save();
+        res.status(200).json({ message: "Product updated successfully", product: updatedProduct });
+    } catch (error) {
+        console.error("Error updating product:", error);
+        res.status(500).json({ error: "Failed to update product" });
+    }
+}
+export const Kilrocksiglget=  async (req,res)=>{
+    let result = await  KilrockSchema.findOne({_id:req.params.id})
+    res.send(result)
+  }
+      
+  export const Ladderproducts= async(req ,res)=>{
+    try {
+        let  {name , title , price } = req.body 
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const newuser = await new  LadderSchema({
+            name,
+            title,
+            price,
+            image: profilepicturePath,
+        }).save() 
+
+       
+        if(newuser){
+            return res.status(200).send({Message:"product added Successfully"})
+        }else{
+            console.log(error)
+        }
+    } catch (error) {
+        
+    }
+}
+export const Ladderupl= async (req, res) => {
+    try {
+        let { name, title, price } = req.body;
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const product = await  LadderSchema.findOne({ _id: req.params.id });
+        if (!product) {
+            return res.status(404).json({ error: "Product not found" });
+        }
+        product.name = name || product.name;
+        product.title = title || product.title;
+        product.price = price || product.price;
+        if (profilepicturePath) {
+            product.image = profilepicturePath;
+        }
+        const updatedProduct = await product.save();
+        res.status(200).json({ message: "Product updated successfully", product: updatedProduct });
+    } catch (error) {
+        console.error("Error updating product:", error);
+        res.status(500).json({ error: "Failed to update product" });
+    }
+}
+export const Laddersiglget=  async (req,res)=>{
+    let result = await  LadderSchema.findOne({_id:req.params.id})
+    res.send(result)
+  }   
+
+  export const Locktileproducts= async(req ,res)=>{
+    try {
+        let  {name , title , price } = req.body 
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const newuser = await new  LocktileSchema({
+            name,
+            title,
+            price,
+            image: profilepicturePath,
+        }).save() 
+
+       
+        if(newuser){
+            return res.status(200).send({Message:"product added Successfully"})
+        }else{
+            console.log(error)
+        }
+    } catch (error) {
+        
+    }
+}
+export const Locktileupl= async (req, res) => {
+    try {
+        let { name, title, price } = req.body;
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const product = await  LocktileSchema.findOne({ _id: req.params.id });
+        if (!product) {
+            return res.status(404).json({ error: "Product not found" });
+        }
+        product.name = name || product.name;
+        product.title = title || product.title;
+        product.price = price || product.price;
+        if (profilepicturePath) {
+            product.image = profilepicturePath;
+        }
+        const updatedProduct = await product.save();
+        res.status(200).json({ message: "Product updated successfully", product: updatedProduct });
+    } catch (error) {
+        console.error("Error updating product:", error);
+        res.status(500).json({ error: "Failed to update product" });
+    }
+}
+export const Locktilesiglget=  async (req,res)=>{
+    let result = await  LocktileSchema.findOne({_id:req.params.id})
+    res.send(result)
+  } 

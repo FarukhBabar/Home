@@ -28,6 +28,9 @@ import HarrisSchema from '../../config/Diy/Harris.js'
 import HilkaSchema from '../../config/Diy/Hilka.js'
 import HumnrolSchema from '../../config/Diy/Humnrol.js'
 import JbwelSchema from '../../config/Diy/Jbwel.js'
+import KilrockSchema from '../../config/Diy/Kilrock.js'
+import LadderSchema from '../../config/Diy/Ladder.js'
+import LocktileSchema from '../../config/Diy/Locktile.js'
 export const BarrientDAta = async(req,res)=>{
     let result = await BarrientSchema.find()
   return  res.send(result)
@@ -745,5 +748,77 @@ if(data){
 }
 export const Jbwelsingl =async (req, res) => {
   let result = await JbwelSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const KilrockDAta = async(req,res)=>{
+  let result = await KilrockSchema.find()
+return  res.send(result)
+}
+export const KilrockFree = async(req,res)=>{
+let result = await KilrockSchema.find()
+return  res.send(result)
+}
+export const KilrockDelitem = async (req,res)=>{
+let data = await KilrockSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Kilrocksingl =async (req, res) => {
+  let result = await KilrockSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const LadderDAta = async(req,res)=>{
+  let result = await LadderSchema.find()
+return  res.send(result)
+}
+export const LadderFree = async(req,res)=>{
+let result = await LadderSchema.find()
+return  res.send(result)
+}
+export const LadderDelitem = async (req,res)=>{
+let data = await LadderSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Laddersingl =async (req, res) => {
+  let result = await LadderSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const LocktileDAta = async(req,res)=>{
+  let result = await LocktileSchema.find()
+return  res.send(result)
+}
+export const LocktileFree = async(req,res)=>{
+let result = await LocktileSchema.find()
+return  res.send(result)
+}
+export const LocktileDelitem = async (req,res)=>{
+let data = await LocktileSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Locktilesingl =async (req, res) => {
+  let result = await LocktileSchema.findOne({_id: req.params.id})
   return res.send(result)
 }
