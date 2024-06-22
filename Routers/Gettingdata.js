@@ -5,7 +5,7 @@ import { BatteriesDAta,FirstaidDAta,FirstaidFree,FirstaidDelitem,Firstaidsingl,S
 import { CandelesDAta, CandelesFree, Candelessingl, CarpoDAta, CarpoFree, Carposingl, CraftpoDAta, CraftpoDelitem, CraftpoFree, Craftposingl, DisposiblDAta, DisposiblDelitem, DisposiblFree, Disposiblsingl, DiytoolsDAta, DiytoolsDelitem, DiytoolsFree, Diytoolssingl, FoodpoDAta, FoodpoDelitem, FoodpoFree, Foodposingl, HoiseryDAta, HoiseryDelitem, HoiseryFree, Hoiserysingl, HouseholdclDAta, HouseholdclDelitem, HouseholdclFree, Householdclsingl, HouseholdprDAta, HouseholdprDelitem, HouseholdprFree, Householdprsingl, KitchenwearpDAta, KitchenwearpDelitem, KitchenwearpFree, Kitchenwearpsingl, LightergasDAta, LightergasDelitem, LightergasFree, Lightergassingl, LoundryironDAta, LoundryironDelitem, LoundryironFree, Loundryironsingl, PestconDAta, PestconDelitem, PestconFree, Pestconsingl, PotoyDAta, PotoyDelitem, PotoyFree, Potoysingl, ReadingDAta, ReadingDelitem, ReadingFree, Readingsingl, ShoeDAta, ShoeDelitem, ShoeFree, Shoesingl, StationeyDAta, StationeyDelitem, StationeyFree, Stationeysingl } from "../Controller/Pondlinegetting.js";
 import { BagslDAta, BagslDelitem, BagslFree, Bagslsingl, BasketstDAta, BasketstDelitem, BasketstFree, Basketstsingl, GlovesDAta, GlovesDelitem, GlovesFree, Glovessingl, LuggageDAta, LuggageDelitem, LuggageFree, Luggagesingl, MopsDAta, MopsDelitem, MopsFree, Mopssingl, SpongeDAta, SpongeDelitem, SpongeFree, Spongesingl } from "../Controller/cleaningmatterial/Cleaninggetting.js";
 import { BarrientDAta, BarrientDelitem, BarrientFree, Barrientsingl, BartolinDAta, BartolinDelitem, BartolinFree, Bartolinsingl, BirbrandFree, BirdbrandDAta, BirdbrandDelitem, Birdbrandsingl, BlackDAta, BlackDelitem, BlackFree, Blacksingl, BonitDAta, BonitDelitem, BonitFree, Bonitsingl, BostikDAta, BostikDelitem, BostikFree, Bostiksingl, BriwaxDAta, BriwaxDelitem, BriwaxFree, Briwaxsingl, BrookDAta, BrookDelitem, BrookFree, Brooksingl, CarplanDAta, CarplanDelitem, CarplanFree, Carplansingl, CarproDAta, CarproDelitem, CarproFree, Carprosingl, ChomisDAta, ChomisDelitem, ChomisFree, Chomissingl, CommandDAta, CommandDelitem, CommandFree, Commandsingl, CoralDAta, CoralDelitem, CoralFree, Coralsingl, CrownDAta, CrownDelitem, CrownFree, Crownsingl, DarperDAta, DarperDelitem, DarperFree, Darpersingl, DektonDAta, DektonDelitem, DektonFree, Dektonsingl, DemsumDAta, DemsumDelitem, DemsumFree, Demsumsingl, EdcoDAta, EdcoDelitem, EdcoFree, Edcosingl, EverDAta, EverDelitem, EverFree, Eversingl, ExitexDAta, ExitexDelitem, ExitexFree, Exitexsingl, FitDAta, FitDelitem, FitFree, Fitsingl, GasDAta, GasDelitem, GasFree, Gassingl, GlobalDAta, GlobalDelitem, GlobalFree, Globalsingl, GorilaDAta, GorilaDelitem, GorilaFree, Gorilasingl, HagesanDAta, HagesanDelitem, HagesanFree, Hagesansingl, HardwareDAta, HardwareDelitem, HardwareFree, Hardwaresingl, HarrisDAta, HarrisDelitem, HarrisFree, Harrissingl, HilkaAta, HilkaDelitem, HilkaFree, Hilkasingl, HumnrolDAta, HumnrolDelitem, HumnrolFree, Humnrolsingl, JbwelDAta, JbwelDelitem, JbwelFree, Jbwelsingl, KilrockDAta, KilrockDelitem, KilrockFree, Kilrocksingl, LadderDAta, LadderDelitem, LadderFree, Laddersingl, LocktileDAta, LocktileDelitem, LocktileFree, Locktilesingl } from "../Controller/Diy/Diygeeting.js";
-import { LynwoodDAta, LynwoodDelitem, LynwoodFree, Lynwoodsingl, OxfordDAta, OxfordDelitem, OxfordFree, Oxfordsingl, PestcoDAta, PestcoDelitem, PestcoFree, Pestcontsingl, PlasplugDAta, PlasplugDelitem, PlasplugFree, Plasplugsingl, PrimacarDAta, PrimacarDelitem, PrimacarFree, Primacarsingl, RolsonDAta, RolsonDelitem, RolsonFree, Rolsonsingl, RonsealDAta, RonsealDelitem, RonsealFree, Ronsealsingl, RustinsDAta, RustinsDelitem, RustinsFree, Rustinssingl, SecrupDAta, SecrupDelitem, SecrupFree, Secrupsingl, SecuritDAta, SecuritDelitem, SecuritFree, Securitsingl, ShortageDAta, ShortageDelitem, ShortageFree, Shortagesingl, SoudalDAta, SoudalDelitem, SoudalFree, Soudalsingl, StarpackDAta, StarpackDelitem, StarpackFree, Starpacksingl, SterlingDAta, SterlingDelitem, SterlingFree, Sterlingsingl, tableauDAta, tableauDelitem, tableauFree, tableausingl } from "../Controller/Diy/Diygettingto.js";
+import { AmtechDAta, AmtechDelitem, AmtechFree, Amtechsingl, AntiquxDAta, AntiquxDelitem, AntiquxFree, Antiquxsingl, LynwoodDAta, LynwoodDelitem, LynwoodFree, Lynwoodsingl, OxfordDAta, OxfordDelitem, OxfordFree, Oxfordsingl, PestcoDAta, PestcoDelitem, PestcoFree, Pestcontsingl, PlasplugDAta, PlasplugDelitem, PlasplugFree, Plasplugsingl, PrimacarDAta, PrimacarDelitem, PrimacarFree, Primacarsingl, RolsonDAta, RolsonDelitem, RolsonFree, Rolsonsingl, RonsealDAta, RonsealDelitem, RonsealFree, Ronsealsingl, RustinsDAta, RustinsDelitem, RustinsFree, Rustinssingl, SecrupDAta, SecrupDelitem, SecrupFree, Secrupsingl, SecuritDAta, SecuritDelitem, SecuritFree, Securitsingl, ShortageDAta, ShortageDelitem, ShortageFree, Shortagesingl, SoudalDAta, SoudalDelitem, SoudalFree, Soudalsingl, StarpackDAta, StarpackDelitem, StarpackFree, Starpacksingl, SterlingDAta, SterlingDelitem, SterlingFree, Sterlingsingl, UltratapeDAta, UltratapeDelitem, UltratapeFree, Ultratapesingl, UniconDAta, UniconDelitem, UniconFree, Uniconsingl, VacuumDAta, VacuumDelitem, VacuumFree, Vacuumsingl, VelcroDAta, VelcroDelitem, VelcroFree, Velcrosingl, VfmpaintDAta, VfmpaintDelitem, VfmpaintFree, Vfmpaintsingl, Wd40DAta, Wd40Delitem, Wd40Free, Wd40singl, WernerDAta, WernerDelitem, WernerFree, Wernersingl, YelelockDAta, YelelockDelitem, YelelockFree, Yelelocksingl, tableauDAta, tableauDelitem, tableauFree, tableausingl, tricycleDAta, tricycleDelitem, tricycleFree, tricyclesingl } from "../Controller/Diy/Diygettingto.js";
 import { Rolsonsiglget } from "../Controller/Diy/Diypostto.js";
 
 const router = express.Router()
@@ -740,8 +740,59 @@ router.get("/tableaufreedelivery", tableauFree)
 router.delete("/tableauuserid/:id", tableauDelitem)
 router.get('/tableausingle/:id' , tableausingl)
 
+router.get("/tricycleuser", tricycleDAta )
+router.get("/tricyclefreedelivery", tricycleFree)
+router.delete("/tricycleuserid/:id", tricycleDelitem)
+router.get('/tricyclesingle/:id' , tricyclesingl)
 
+router.get("/ultratapeuser", UltratapeDAta )
+router.get("/ultratapefreedelivery", UltratapeFree)
+router.delete("/ultratapeuserid/:id", UltratapeDelitem)
+router.get('/ultratapesingle/:id' , Ultratapesingl)
 
+router.get("/vacuumuser", VacuumDAta )
+router.get("/vacuumfreedelivery", VacuumFree)
+router.delete("/vacuumuserid/:id", VacuumDelitem)
+router.get('/vacuumsingle/:id' , Vacuumsingl)
 
+router.get("/velcrouser", VelcroDAta )
+router.get("/velcrofreedelivery", VelcroFree)
+router.delete("/velcrouserid/:id", VelcroDelitem)
+router.get('/velcrosingle/:id' , Velcrosingl)
+
+router.get("/vfmpaintuser", VfmpaintDAta )
+router.get("/vfmpaintfreedelivery", VfmpaintFree)
+router.delete("/vfmpaintuserid/:id", VfmpaintDelitem)
+router.get('/vfmpaintsingle/:id' , Vfmpaintsingl)
+
+router.get("/wd40user", Wd40DAta )
+router.get("/wd40freedelivery", Wd40Free)
+router.delete("/wd40userid/:id", Wd40Delitem)
+router.get('/wd40single/:id' , Wd40singl)
+
+router.get("/werneruser", WernerDAta )
+router.get("/wernerfreedelivery", WernerFree)
+router.delete("/werneruserid/:id", WernerDelitem)
+router.get('/wernersingle/:id' , Wernersingl)
+
+router.get("/yelelockuser", YelelockDAta )
+router.get("/yelelockfreedelivery", YelelockFree)
+router.delete("/yelelockuserid/:id", YelelockDelitem)
+router.get('/yelelocksingle/:id' , Yelelocksingl)
+
+router.get("/uniconuser", UniconDAta )
+router.get("/uniconfreedelivery", UniconFree)
+router.delete("/uniconuserid/:id", UniconDelitem)
+router.get('/uniconsingle/:id' , Uniconsingl)
+
+router.get("/amtechuser", AmtechDAta )
+router.get("/amtechfreedelivery", AmtechFree)
+router.delete("/amtechuserid/:id", AmtechDelitem)
+router.get('/amtechsingle/:id' , Amtechsingl)
+
+router.get("/antiquxuser", AntiquxDAta )
+router.get("/antiquxfreedelivery", AntiquxFree)
+router.delete("/antiquxuserid/:id", AntiquxDelitem)
+router.get('/antiquxsingle/:id' , Antiquxsingl)
 
 export default router

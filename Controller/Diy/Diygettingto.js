@@ -13,6 +13,17 @@ import SoudalSchema from '../../config/Diy/Soudal.js'
 import StarpackSchema from '../../config/Diy/Starpack.js'
 import SterlingSchema from '../../config/Diy/Sterling.js'
 import TableauSchema from '../../config/Diy/Tableau.js'
+import TricycleSchema from '../../config/Diy/Tricycle.js'
+import UltratapeSchema from '../../config/Diy/Ultratape.js'
+import VacuumSchema from '../../config/Diy/Vacuum.js'
+import VelcroSchema from '../../config/Diy/Velcro.js'
+import VfmpaintSchema from '../../config/Diy/Vfmpaint.js'
+import WernerSchema from '../../config/Diy/Werner.js'
+import YelelockSchema from '../../config/Diy/Yelelock.js'
+import Wd40Schema from '../../config/Diy/Wd40.js'
+import AntiquxSchema from '../../config/Diy/Antiqux.js'
+import UniconSchema from '../../config/Diy/Unicon.js'
+import AmtechSchema from '../../config/Diy/Amtech.js'
 export const LynwoodDAta = async(req,res)=>{
     let result = await LynwoodSchema.find()
   return  res.send(result)
@@ -370,5 +381,269 @@ if(data){
 }
 export const tableausingl =async (req, res) => {
   let result = await TableauSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const tricycleDAta = async(req,res)=>{
+  let result = await TricycleSchema.find()
+return  res.send(result)
+}
+export const tricycleFree = async(req,res)=>{
+let result = await TricycleSchema.find()
+return  res.send(result)
+}
+export const tricycleDelitem = async (req,res)=>{
+let data = await TricycleSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const tricyclesingl =async (req, res) => {
+  let result = await TricycleSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const UltratapeDAta = async(req,res)=>{
+  let result = await UltratapeSchema.find()
+return  res.send(result)
+}
+export const UltratapeFree = async(req,res)=>{
+let result = await UltratapeSchema.find()
+return  res.send(result)
+}
+export const UltratapeDelitem = async (req,res)=>{
+let data = await UltratapeSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Ultratapesingl =async (req, res) => {
+  let result = await UltratapeSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const VacuumDAta = async(req,res)=>{
+  let result = await VacuumSchema.find()
+return  res.send(result)
+}
+export const VacuumFree = async(req,res)=>{
+let result = await VacuumSchema.find()
+return  res.send(result)
+}
+export const VacuumDelitem = async (req,res)=>{
+let data = await VacuumSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Vacuumsingl =async (req, res) => {
+  let result = await VacuumSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const VelcroDAta = async(req,res)=>{
+  let result = await VelcroSchema.find()
+return  res.send(result)
+}
+export const VelcroFree = async(req,res)=>{
+let result = await VelcroSchema.find()
+return  res.send(result)
+}
+export const VelcroDelitem = async (req,res)=>{
+let data = await VelcroSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Velcrosingl =async (req, res) => {
+  let result = await VelcroSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const VfmpaintDAta = async(req,res)=>{
+  let result = await VfmpaintSchema.find()
+return  res.send(result)
+}
+export const VfmpaintFree = async(req,res)=>{
+let result = await VfmpaintSchema.find()
+return  res.send(result)
+}
+export const VfmpaintDelitem = async (req,res)=>{
+let data = await VfmpaintSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Vfmpaintsingl =async (req, res) => {
+  let result = await VfmpaintSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const Wd40DAta = async(req,res)=>{
+  let result = await Wd40Schema.find()
+return  res.send(result)
+}
+export const Wd40Free = async(req,res)=>{
+let result = await Wd40Schema.find()
+return  res.send(result)
+}
+export const Wd40Delitem = async (req,res)=>{
+let data = await Wd40Schema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Wd40singl =async (req, res) => {
+  let result = await Wd40Schema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const WernerDAta = async(req,res)=>{
+  let result = await WernerSchema.find()
+return  res.send(result)
+}
+export const WernerFree = async(req,res)=>{
+let result = await WernerSchema.find()
+return  res.send(result)
+}
+export const WernerDelitem = async (req,res)=>{
+let data = await WernerSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Wernersingl =async (req, res) => {
+  let result = await WernerSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const YelelockDAta = async(req,res)=>{
+  let result = await YelelockSchema.find()
+return  res.send(result)
+}
+export const YelelockFree = async(req,res)=>{
+let result = await YelelockSchema.find()
+return  res.send(result)
+}
+export const YelelockDelitem = async (req,res)=>{
+let data = await YelelockSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Yelelocksingl =async (req, res) => {
+  let result = await YelelockSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const UniconDAta = async(req,res)=>{
+  let result = await UniconSchema.find()
+return  res.send(result)
+}
+export const UniconFree = async(req,res)=>{
+let result = await UniconSchema.find()
+return  res.send(result)
+}
+export const UniconDelitem = async (req,res)=>{
+let data = await UniconSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Uniconsingl =async (req, res) => {
+  let result = await UniconSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const AmtechDAta = async(req,res)=>{
+  let result = await AmtechSchema.find()
+return  res.send(result)
+}
+export const AmtechFree = async(req,res)=>{
+let result = await AmtechSchema.find()
+return  res.send(result)
+}
+export const AmtechDelitem = async (req,res)=>{
+let data = await AmtechSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Amtechsingl =async (req, res) => {
+  let result = await AmtechSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const AntiquxDAta = async(req,res)=>{
+  let result = await AntiquxSchema.find()
+return  res.send(result)
+}
+export const AntiquxFree = async(req,res)=>{
+let result = await AntiquxSchema.find()
+return  res.send(result)
+}
+export const AntiquxDelitem = async (req,res)=>{
+let data = await AntiquxSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Antiquxsingl =async (req, res) => {
+  let result = await AntiquxSchema.findOne({_id: req.params.id})
   return res.send(result)
 }

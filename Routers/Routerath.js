@@ -10,8 +10,8 @@ import { Bagslproducts, Bagslupl, Basketstproducts, Basketstupl, Glovesproducts,
 import { Bagslsingl, Basketstsingl, Glovessingl, Mopssingl, Spongesingl } from "../Controller/cleaningmatterial/Cleaninggetting.js"
 import { Barrientproducts, Barrientupl, Bartolinproducts, Bartolinupl, Birdbrandproducts, Birdbrandupl, Blackproducts, Blackupl, Bonitproducts, Bonitupl, Bostikproducts, Bostikupl, Briwaxproducts, Briwaxsiglget, Briwaxupl, Brookproducts, Brooksiglget, Brookupl, Carplanproducts, Carplansiglget, Carplanupl, Carproproducts, Carprosiglget, Carproupl, Chomisproducts, Chomissiglget, Chomisupl, Commandproducts, Commandsiglget, Commandupl, Coralproducts, Coralsiglget, Coralupl, Crownproducts, Crownsiglget, Crownupl, Darperproducts, Darpersiglget, Darperupl, Dektonproducts, Dektonsiglget, Dektonupl, Demsumproducts, Demsumsiglget, Demsumupl, Edcoproducts, Edcosiglget, Edcoupl, Everproducts, Eversiglget, Everupl, Exitexproducts, Exitexsiglget, Exitexupl, Fitproducts, Fitsiglget, Fitupl, Gasproducts, Gassiglget, Gasupl, Globalproducts, Globalsiglget, Globalupl, Gorilaproducts, Gorilasiglget, Gorilaupl, Hagesanproducts, Hagesansiglget, Hagesanupl, Hardwareproducts, Hardwaresiglget, Hardwareupl, Harrisproducts, Harrissiglget, Harrisupl, Hilkaproducts, Hilkasiglget, Hilkaupl, Humnrolproducts, Humnrolsiglget, Humnrolupl, Jbwelproducts, Jbwelsiglget, Jbwelupl, Kilrockproducts, Kilrocksiglget, Kilrockupl, Ladderproducts, Laddersiglget, Ladderupl, Locktileproducts, Locktilesiglget, Locktileupl } from "../Controller/Diy/Diypost.js"
 import { Barrientsingl, Bartolinsingl, Birdbrandsingl, Blacksingl, Bonitsingl, Bostiksingl, Laddersingl } from "../Controller/Diy/Diygeeting.js"
-import { Lynwoodproducts, Lynwoodsiglget, Lynwoodupl, Oxfordproducts, Oxfordsiglget, Oxfordupl, Pestcoproducts, Pestcosiglget, Pestcoupl, Plasplugproducts, Plasplugsiglget, Plasplugupl, Primacarproducts, Primacarsiglget, Primacarupl, Rolsonproducts, Rolsonsiglget, Rolsonupl, Ronsealproducts, Ronsealsiglget, Ronsealupl, Rustinsproducts, Rustinssiglget, Rustinsupl, Secrupproducts, Secrupsiglget, Secrupupl, Securitproducts, Securitsiglget, Securitupl, Shortageproducts, Shortagesiglget, Shortageupl, Soudalproducts, Soudalsiglget, Soudalupl, Starpackproducts, Starpacksiglget, Starpackupl, Sterlingproducts, Sterlingsiglget, Sterlingupl, tableauproducts, tableausiglget, tableauupl } from "../Controller/Diy/Diypostto.js"
-import { PlasplugDAta } from "../Controller/Diy/Diygettingto.js"
+import { Amtechproducts, Amtechsiglget, Amtechupl, Antiquxproducts, Antiquxsiglget, Antiquxupl, Lynwoodproducts, Lynwoodsiglget, Lynwoodupl, Oxfordproducts, Oxfordsiglget, Oxfordupl, Pestcoproducts, Pestcosiglget, Pestcoupl, Plasplugproducts, Plasplugsiglget, Plasplugupl, Primacarproducts, Primacarsiglget, Primacarupl, Rolsonproducts, Rolsonsiglget, Rolsonupl, Ronsealproducts, Ronsealsiglget, Ronsealupl, Rustinsproducts, Rustinssiglget, Rustinsupl, Secrupproducts, Secrupsiglget, Secrupupl, Securitproducts, Securitsiglget, Securitupl, Shortageproducts, Shortagesiglget, Shortageupl, Soudalproducts, Soudalsiglget, Soudalupl, Starpackproducts, Starpacksiglget, Starpackupl, Sterlingproducts, Sterlingsiglget, Sterlingupl, Ultratapeproducts, Ultratapesiglget, Ultratapeupl, Uniconproducts, Uniconsiglget, Uniconupl, Vacuumproducts, Vacuumsiglget, Vacuumupl, Velcroproducts, Velcrosiglget, Velcroupl, Vfmpaintproducts, Vfmpaintsiglget, Vfmpaintupl, Wd40products, Wd40siglget, Wd40upl, Wernerproducts, Wernersiglget, Wernerupl, Yelelockproducts, Yelelocksiglget, Yelelockupl, tableauproducts, tableausiglget, tableauupl, tricycleproducts, tricyclesiglget, tricycleupl } from "../Controller/Diy/Diypostto.js"
+import { PlasplugDAta, Yelelocksingl, tricycleFree, tricyclesingl } from "../Controller/Diy/Diygettingto.js"
 
  const router = express.Router()
 
@@ -602,4 +602,49 @@ import { PlasplugDAta } from "../Controller/Diy/Diygettingto.js"
  router.post("/tableauproducts" ,uploads.single('image') , tableauproducts )
  router.put("/tableausingle/:id",uploads.single('image'), tableauupl)
  router.get("/tableausingle/:id" , tableausiglget)
+ 
+ router.post("/tricycleproducts" ,uploads.single('image') , tricycleproducts )
+ router.put("/tricyclesingle/:id",uploads.single('image'), tricycleupl)
+ router.get("/tricyclesingle/:id" , tricyclesiglget)
+
+ router.post("/ultratapeproducts" ,uploads.single('image') , Ultratapeproducts )
+ router.put("/ultratapesingle/:id",uploads.single('image'), Ultratapeupl)
+ router.get("/ultratapesingle/:id" , Ultratapesiglget)
+ 
+ router.post("/vacuumproducts" ,uploads.single('image') , Vacuumproducts )
+ router.put("/vacuumsingle/:id",uploads.single('image'), Vacuumupl)
+ router.get("/vacuumsingle/:id" , Vacuumsiglget)
+
+ router.post("/velcroproducts" ,uploads.single('image') , Velcroproducts )
+ router.put("/velcrosingle/:id",uploads.single('image'), Velcroupl)
+ router.get("/velcrosingle/:id" , Velcrosiglget)
+ 
+ router.post("/vfmpaintproducts" ,uploads.single('image') , Vfmpaintproducts )
+ router.put("/vfmpaintsingle/:id",uploads.single('image'), Vfmpaintupl)
+ router.get("/vfmpaintsingle/:id" , Vfmpaintsiglget)
+ 
+ router.post("/wd40products" ,uploads.single('image') , Wd40products )
+ router.put("/wd40single/:id",uploads.single('image'), Wd40upl)
+ router.get("/wd40single/:id" , Wd40siglget)
+ 
+ router.post("/wernerproducts" ,uploads.single('image') , Wernerproducts )
+ router.put("/wernersingle/:id",uploads.single('image'), Wernerupl)
+ router.get("/wernersingle/:id" , Wernersiglget)
+ 
+ router.post("/yelelockproducts" ,uploads.single('image') , Yelelockproducts )
+ router.put("/yelelocksingle/:id",uploads.single('image'), Yelelockupl)
+ router.get("/yelelocksingle/:id" , Yelelocksiglget)
+
+ router.post("/uniconproducts" ,uploads.single('image') , Uniconproducts )
+ router.put("/uniconsingle/:id",uploads.single('image'), Uniconupl)
+ router.get("/uniconsingle/:id" , Uniconsiglget)
+
+ router.post("/amtechproducts" ,uploads.single('image') , Amtechproducts )
+ router.put("/amtechsingle/:id",uploads.single('image'), Amtechupl)
+ router.get("/amtechsingle/:id" , Amtechsiglget)
+
+ router.post("/antiquxproducts" ,uploads.single('image') , Antiquxproducts )
+ router.put("/antiquxsingle/:id",uploads.single('image'), Antiquxupl)
+ router.get("/antiquxsingle/:id" , Antiquxsiglget)
+
  export default router
