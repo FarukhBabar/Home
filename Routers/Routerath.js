@@ -12,6 +12,8 @@ import { Barrientproducts, Barrientupl, Bartolinproducts, Bartolinupl, Birdbrand
 import { Barrientsingl, Bartolinsingl, Birdbrandsingl, Blacksingl, Bonitsingl, Bostiksingl, Laddersingl } from "../Controller/Diy/Diygeeting.js"
 import { Amtechproducts, Amtechsiglget, Amtechupl, Antiquxproducts, Antiquxsiglget, Antiquxupl, Lynwoodproducts, Lynwoodsiglget, Lynwoodupl, Oxfordproducts, Oxfordsiglget, Oxfordupl, Pestcoproducts, Pestcosiglget, Pestcoupl, Plasplugproducts, Plasplugsiglget, Plasplugupl, Primacarproducts, Primacarsiglget, Primacarupl, Rolsonproducts, Rolsonsiglget, Rolsonupl, Ronsealproducts, Ronsealsiglget, Ronsealupl, Rustinsproducts, Rustinssiglget, Rustinsupl, Secrupproducts, Secrupsiglget, Secrupupl, Securitproducts, Securitsiglget, Securitupl, Shortageproducts, Shortagesiglget, Shortageupl, Soudalproducts, Soudalsiglget, Soudalupl, Starpackproducts, Starpacksiglget, Starpackupl, Sterlingproducts, Sterlingsiglget, Sterlingupl, Ultratapeproducts, Ultratapesiglget, Ultratapeupl, Uniconproducts, Uniconsiglget, Uniconupl, Vacuumproducts, Vacuumsiglget, Vacuumupl, Velcroproducts, Velcrosiglget, Velcroupl, Vfmpaintproducts, Vfmpaintsiglget, Vfmpaintupl, Wd40products, Wd40siglget, Wd40upl, Wernerproducts, Wernersiglget, Wernerupl, Yelelockproducts, Yelelocksiglget, Yelelockupl, tableauproducts, tableausiglget, tableauupl, tricycleproducts, tricyclesiglget, tricycleupl } from "../Controller/Diy/Diypostto.js"
 import { PlasplugDAta, Yelelocksingl, tricycleFree, tricyclesingl } from "../Controller/Diy/Diygettingto.js"
+import { Breadproducts, Breadsiglget, Breadupl, Cateringproducts, Cateringsiglget, Cateringupl, Chromeproducts, Chromesiglget, Chromeupl, Cookwarproducts, Cookwarsiglget, Cookwarupl, Culteryproducts, Culterysiglget, Culteryupl, Kettlesproducts, Kettlessiglget, Kettlesupl, Kitechnaccproducts, Kitechnaccsiglget, Kitechnaccupl, Kitechnbinproducts, Kitechnbinsiglget, Kitechnbinupl, Kitechngaproducts, Kitechngasiglget, Kitechngaupl, Kitechnkniproducts, Kitechnknisiglget, Kitechnkniupl, Plastickitehenproducts, Plastickitehensiglget, Plastickitehenupl, Scalekitehenproducts, Scalekitehensiglget, Scalekitehenupl, Simplehumanproducts, Simplehumansiglget, Simplehumanupl, Teaproducts, Teasiglget, Teaupl, Trayproducts, Traysiglget, Trayupl, Waterproducts, Watersiglget, Waterupl, Woodenproducts, Woodensiglget, Woodenupl } from "../Controller/Kitechenware/Kitechenwearpost.js"
+import { Scalekitehensingl } from "../Controller/Kitechenware/Kitechenweargetting.js"
 
  const router = express.Router()
 
@@ -646,5 +648,68 @@ import { PlasplugDAta, Yelelocksingl, tricycleFree, tricyclesingl } from "../Con
  router.post("/antiquxproducts" ,uploads.single('image') , Antiquxproducts )
  router.put("/antiquxsingle/:id",uploads.single('image'), Antiquxupl)
  router.get("/antiquxsingle/:id" , Antiquxsiglget)
+ 
+ router.post("/chromproducts" ,uploads.single('image') , Chromeproducts )
+ router.put("/chromsingle/:id",uploads.single('image'), Chromeupl)
+ router.get("/chromsingle/:id" , Chromesiglget)
 
+ router.post("/cookwarproducts" ,uploads.single('image') , Cookwarproducts )
+ router.put("/cookwarsingle/:id",uploads.single('image'), Cookwarupl)
+ router.get("/cookwarsingle/:id" , Cookwarsiglget)
+ 
+ router.post("/kettlesproducts" ,uploads.single('image') , Kettlesproducts )
+ router.put("/kettlessingle/:id",uploads.single('image'), Kettlesupl)
+ router.get("/kettlessingle/:id" , Kettlessiglget)
+ 
+ router.post("/culteryproducts" ,uploads.single('image') , Culteryproducts )
+ router.put("/culterysingle/:id",uploads.single('image'), Culteryupl)
+ router.get("/culterysingle/:id" , Culterysiglget)
+ 
+ router.post("/kitechenaccproducts" ,uploads.single('image') , Kitechnaccproducts )
+ router.put("/kitechenaccsingle/:id",uploads.single('image'), Kitechnaccupl)
+ router.get("/kitechenaccsingle/:id" , Kitechnaccsiglget)
+ 
+ router.post("/kitechenbinproducts" ,uploads.single('image') , Kitechnbinproducts )
+ router.put("/kitechenbinsingle/:id",uploads.single('image'), Kitechnbinupl)
+ router.get("/kitechenbinsingle/:id" , Kitechnbinsiglget)
+ 
+ router.post("/kitechengaproducts" ,uploads.single('image') , Kitechngaproducts )
+ router.put("/kitechengasingle/:id",uploads.single('image'), Kitechngaupl)
+ router.get("/kitechengasingle/:id" , Kitechngasiglget)
+ 
+ router.post("/kitechenkniproducts" ,uploads.single('image') , Kitechnkniproducts )
+ router.put("/kitechenknisingle/:id",uploads.single('image'), Kitechnkniupl)
+ router.get("/kitechenknisingle/:id" , Kitechnknisiglget)
+ 
+ router.post("/scaleproducts" ,uploads.single('image') , Scalekitehenproducts )
+ router.put("/scalesingle/:id",uploads.single('image'), Scalekitehenupl)
+ router.get("/scalesingle/:id" , Scalekitehensiglget)
+
+ router.post("/plastickitechenproducts" ,uploads.single('image') , Plastickitehenproducts )
+ router.put("/plastickitechensingle/:id",uploads.single('image'), Plastickitehenupl)
+ router.get("/plastickitechensingle/:id" , Plastickitehensiglget)
+ 
+ router.post("/simplehumanproducts" ,uploads.single('image') , Simplehumanproducts )
+ router.put("/simplehumansingle/:id",uploads.single('image'), Simplehumanupl)
+ router.get("/simplehumansingle/:id" , Simplehumansiglget)
+
+ router.post("/breadproducts" ,uploads.single('image') , Breadproducts )
+ router.put("/breadsingle/:id",uploads.single('image'), Breadupl)
+ router.get("/breadsingle/:id" , Breadsiglget)
+
+ router.post("/teaproducts" ,uploads.single('image') , Teaproducts )
+ router.put("/teasingle/:id",uploads.single('image'), Teaupl)
+ router.get("/teasingle/:id" , Teasiglget)
+ 
+ router.post("/trayproducts" ,uploads.single('image') , Trayproducts )
+ router.put("/traysingle/:id",uploads.single('image'), Trayupl)
+ router.get("/traysingle/:id" , Traysiglget)
+ 
+ router.post("/woodenproducts" ,uploads.single('image') , Woodenproducts )
+ router.put("/woodensingle/:id",uploads.single('image'), Woodenupl)
+ router.get("/woodensingle/:id" , Woodensiglget)
+ 
+ router.post("/cateringproducts" ,uploads.single('image') , Cateringproducts )
+ router.put("/cateringsingle/:id",uploads.single('image'), Cateringupl)
+ router.get("/cateringsingle/:id" , Cateringsiglget)
  export default router
