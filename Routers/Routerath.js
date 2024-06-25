@@ -14,6 +14,10 @@ import { Amtechproducts, Amtechsiglget, Amtechupl, Antiquxproducts, Antiquxsiglg
 import { PlasplugDAta, Yelelocksingl, tricycleFree, tricyclesingl } from "../Controller/Diy/Diygettingto.js"
 import { Breadproducts, Breadsiglget, Breadupl, Cateringproducts, Cateringsiglget, Cateringupl, Chromeproducts, Chromesiglget, Chromeupl, Cookwarproducts, Cookwarsiglget, Cookwarupl, Culteryproducts, Culterysiglget, Culteryupl, Kettlesproducts, Kettlessiglget, Kettlesupl, Kitechnaccproducts, Kitechnaccsiglget, Kitechnaccupl, Kitechnbinproducts, Kitechnbinsiglget, Kitechnbinupl, Kitechngaproducts, Kitechngasiglget, Kitechngaupl, Kitechnkniproducts, Kitechnknisiglget, Kitechnkniupl, Plastickitehenproducts, Plastickitehensiglget, Plastickitehenupl, Scalekitehenproducts, Scalekitehensiglget, Scalekitehenupl, Simplehumanproducts, Simplehumansiglget, Simplehumanupl, Teaproducts, Teasiglget, Teaupl, Trayproducts, Traysiglget, Trayupl, Waterproducts, Watersiglget, Waterupl, Woodenproducts, Woodensiglget, Woodenupl } from "../Controller/Kitechenware/Kitechenwearpost.js"
 import { Scalekitehensingl } from "../Controller/Kitechenware/Kitechenweargetting.js"
+import { Camingproducts, Camingsiglget, Camingupl, Furniturproducts, Furnitursiglget, Furniturupl, Giftwareproducts, Giftwaresiglget, Giftwareupl, Growingproducts, Growingsiglget, Growingupl, Lighteningproducts, Lighteningsiglget, Lighteningupl, Plantersproducts, Planterssiglget, Plantersupl, Toolsproducts, Toolssiglget, Toolsupl, Wateringproducts, Wateringsiglget, Wateringupl, Winterfulesproducts, Winterfulessiglget, Winterfulesupl, fertilizerproducts, fertilizersiglget, fertilizerupl } from "../Controller/Gardening/Gardeningpost.js"
+import { GrowingDAta } from "../Controller/Gardening/Gardeninggetting.js"
+import { Giftproducts, Giftsiglget, Giftupl, Hairproducts, Hairsiglget, Hairupl, Handproducts, Handsiglget, Handupl } from "../Controller/Tolitries/Tolitriespost.js"
+import { HairDAta, HandDAta, HandFree } from "../Controller/Tolitries/Tolitriesgetting.js"
 
  const router = express.Router()
 
@@ -709,7 +713,55 @@ import { Scalekitehensingl } from "../Controller/Kitechenware/Kitechenweargettin
  router.put("/woodensingle/:id",uploads.single('image'), Woodenupl)
  router.get("/woodensingle/:id" , Woodensiglget)
  
- router.post("/cateringproducts" ,uploads.single('image') , Cateringproducts )
- router.put("/cateringsingle/:id",uploads.single('image'), Cateringupl)
- router.get("/cateringsingle/:id" , Cateringsiglget)
+ router.post("/campingproducts" ,uploads.single('image') , Camingproducts )
+ router.put("/campingsingle/:id",uploads.single('image'), Camingupl)
+ router.get("/campingsingle/:id" , Camingsiglget)
+ 
+ router.post("/fertilizerproducts" ,uploads.single('image') , fertilizerproducts )
+ router.put("/fertilizersingle/:id",uploads.single('image'), fertilizerupl)
+ router.get("/fertilizersingle/:id" , fertilizersiglget)
+ 
+ router.post("/furniturproducts" ,uploads.single('image') , Furniturproducts )
+ router.put("/furnitursingle/:id",uploads.single('image'), Furniturupl)
+ router.get("/furnitursingle/:id" , Furnitursiglget)
+ 
+ router.post("/giftwareproducts" ,uploads.single('image') , Giftwareproducts )
+ router.put("/giftwaresingle/:id",uploads.single('image'), Giftwareupl)
+ router.get("/giftwaresingle/:id" , Giftwaresiglget)
+ 
+ router.post("/growingproducts" ,uploads.single('image') , Growingproducts )
+ router.put("/growingsingle/:id",uploads.single('image'), Growingupl)
+ router.get("/growingsingle/:id" , Growingsiglget)
+ 
+ router.post("/lighteningproducts" ,uploads.single('image') , Lighteningproducts )
+ router.put("/lighteningsingle/:id",uploads.single('image'), Lighteningupl)
+ router.get("/lighteningsingle/:id" , Lighteningsiglget)
+ 
+ router.post("/plantersproducts" ,uploads.single('image') , Plantersproducts )
+ router.put("/planterssingle/:id",uploads.single('image'), Plantersupl)
+ router.get("/planterssingle/:id" , Planterssiglget)
+ 
+ router.post("/toolsproducts" ,uploads.single('image') , Toolsproducts )
+ router.put("/toolssingle/:id",uploads.single('image'), Toolsupl)
+ router.get("/toolssingle/:id" , Toolssiglget)
+ 
+ router.post("/wateringproducts" ,uploads.single('image') , Wateringproducts )
+ router.put("/wateringsingle/:id",uploads.single('image'), Wateringupl)
+ router.get("/wateringsingle/:id" , Wateringsiglget)
+ 
+ router.post("/winterfulesproducts" ,uploads.single('image') , Winterfulesproducts )
+ router.put("/winterfulessingle/:id",uploads.single('image'), Winterfulesupl)
+ router.get("/winterfulessingle/:id" , Winterfulessiglget)
+ 
+ router.post("/giftproducts" ,uploads.single('image') , Giftproducts )
+ router.put("/giftsingle/:id",uploads.single('image'), Giftupl)
+ router.get("/giftsingle/:id" , Giftsiglget)
+ 
+ router.post("/hairproducts" ,uploads.single('image') , Hairproducts )
+ router.put("/hairsingle/:id",uploads.single('image'), Hairupl)
+ router.get("/hairsingle/:id" , Hairsiglget)
+ 
+ router.post("/handproducts" ,uploads.single('image') , Handproducts )
+ router.put("/handsingle/:id",uploads.single('image'), Handupl)
+ router.get("/handsingle/:id" , Handsiglget)
  export default router
