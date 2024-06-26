@@ -16,8 +16,8 @@ import { Breadproducts, Breadsiglget, Breadupl, Cateringproducts, Cateringsiglge
 import { Scalekitehensingl } from "../Controller/Kitechenware/Kitechenweargetting.js"
 import { Camingproducts, Camingsiglget, Camingupl, Furniturproducts, Furnitursiglget, Furniturupl, Giftwareproducts, Giftwaresiglget, Giftwareupl, Growingproducts, Growingsiglget, Growingupl, Lighteningproducts, Lighteningsiglget, Lighteningupl, Plantersproducts, Planterssiglget, Plantersupl, Toolsproducts, Toolssiglget, Toolsupl, Wateringproducts, Wateringsiglget, Wateringupl, Winterfulesproducts, Winterfulessiglget, Winterfulesupl, fertilizerproducts, fertilizersiglget, fertilizerupl } from "../Controller/Gardening/Gardeningpost.js"
 import { GrowingDAta } from "../Controller/Gardening/Gardeninggetting.js"
-import { Giftproducts, Giftsiglget, Giftupl, Hairproducts, Hairsiglget, Hairupl, Handproducts, Handsiglget, Handupl } from "../Controller/Tolitries/Tolitriespost.js"
-import { HairDAta, HandDAta, HandFree } from "../Controller/Tolitries/Tolitriesgetting.js"
+import { Giftproducts, Giftsiglget, Giftupl, Hairproducts, Hairsiglget, Hairupl, Handproducts, Handsiglget, Handupl, Healthproducts, Healthsiglget, Healthupl, Mouthproducts, Mouthsiglget, Mouthupl, Perfumesproducts, Perfumessiglget, Perfumesupl, Sanitaryproducts, Sanitarysiglget, Sanitaryupl, Savingproducts, Savingsiglget, Savingupl, Shampoproducts, Shamposiglget, Shampoupl, Showergelpl, Showergelproducts, Showergelsiglget, Skincareproducts, Skincaresiglget, Skincareupl } from "../Controller/Tolitries/Tolitriespost.js"
+import { HairDAta, HandDAta, HandFree, SavingDAta, SavingFree, ShampoDAta, ShampoFree, ShowergelDAta, ShowergelFree } from "../Controller/Tolitries/Tolitriesgetting.js"
 
  const router = express.Router()
 
@@ -764,4 +764,38 @@ import { HairDAta, HandDAta, HandFree } from "../Controller/Tolitries/Tolitriesg
  router.post("/handproducts" ,uploads.single('image') , Handproducts )
  router.put("/handsingle/:id",uploads.single('image'), Handupl)
  router.get("/handsingle/:id" , Handsiglget)
+ 
+ router.post("/healthproducts" ,uploads.single('image') , Healthproducts )
+ router.put("/healthsingle/:id",uploads.single('image'), Healthupl)
+ router.get("/healthsingle/:id" , Healthsiglget)
+ 
+ router.post("/mouthproducts" ,uploads.single('image') , Mouthproducts )
+ router.put("/mouthsingle/:id",uploads.single('image'), Mouthupl)
+ router.get("/mouthsingle/:id" , Mouthsiglget)
+ 
+ router.post("/perfumeproducts" ,uploads.single('image') , Perfumesproducts )
+ router.put("/perfumesingle/:id",uploads.single('image'), Perfumesupl)
+ router.get("/perfumesingle/:id" , Perfumessiglget)
+ 
+ router.post("/sanitaryproducts" ,uploads.single('image') , Sanitaryproducts )
+ router.put("/sanitarysingle/:id",uploads.single('image'), Sanitaryupl)
+ router.get("/sanitarysingle/:id" , Sanitarysiglget)
+ 
+ router.post("/savingproducts" ,uploads.single('image') , Savingproducts )
+ router.put("/savingsingle/:id",uploads.single('image'), Savingupl)
+ router.get("/savingsingle/:id" , Savingsiglget)
+ 
+ router.post("/shampoproducts" ,uploads.single('image') , Shampoproducts )
+ router.put("/shamposingle/:id",uploads.single('image'), Shampoupl)
+ router.get("/shamposingle/:id" , Shamposiglget)
+
+ router.post("/showergelproducts" ,uploads.single('image') , Showergelproducts )
+ router.put("/showergelsingle/:id",uploads.single('image'), Showergelpl)
+ router.get("/showergelsingle/:id" , Showergelsiglget)
+ 
+ router.post("/skincareproducts" ,uploads.single('image') , Skincareproducts )
+ router.put("/skincaresingle/:id",uploads.single('image'), Skincareupl)
+ router.get("/skincaresingle/:id" , Skincaresiglget)
+
+
  export default router

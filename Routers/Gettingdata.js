@@ -9,7 +9,7 @@ import { AmtechDAta, AmtechDelitem, AmtechFree, Amtechsingl, AntiquxDAta, Antiqu
 import { Rolsonsiglget } from "../Controller/Diy/Diypostto.js";
 import { BreadDAta, BreadDelitem, BreadFree, Breadsingl, CateringDAta, CateringDelitem, CateringFree, Cateringsingl, ChromeDAta, ChromeDelitem, ChromeFree, Chromesingl, CookwarDAta, CookwarDelitem, CookwarFree, Cookwarsingl, CulteryDAta, CulteryDelitem, CulteryFree, Culterysingl, KettlesDAta, KettlesDelitem, KettlesFree, Kettlessingl, KitechnaccDAta, KitechnaccDelitem, KitechnaccFree, Kitechnaccsingl, KitechnbinDAta, KitechnbinDelitem, KitechnbinFree, Kitechnbinsingl, KitechngaDAta, KitechngaDelitem, KitechngaFree, Kitechngasingl, KitechnkniDAta, KitechnkniDelitem, KitechnkniFree, Kitechnknisingl, PlastickitehenDAta, PlastickitehenDelitem, PlastickitehenFree, Plastickitehensingl, ScalekitehenDAta, ScalekitehenDelitem, ScalekitehenFree, Scalekitehensingl, SimplehumanDAta, SimplehumanDelitem, SimplehumanFree, Simplehumansingl, TeaDAta, TeaDelitem, TeaFree, Teasingl, TrayDAta, TrayDelitem, TrayFree, Traysingl, WaterDAta, WaterDelitem, WaterFree, Watersingl, WoodenDAta, WoodenDelitem, WoodenFree, Woodensingl } from "../Controller/Kitechenware/Kitechenweargetting.js";
 import { CamingDAta, CamingDelitem, CamingFree, Camingsingl, GiftwareDAta, GiftwareDelitem, GiftwareFree, Giftwaresingl, GrowingDAta, GrowingDelitem, GrowingFree, Growingsingl, LighteningDAta, LighteningDelitem, LighteningFree, Lighteningsingl, PlantersDAta, PlantersDelitem, PlantersFree, Planterssingl, ToolsDAta, ToolsDelitem, ToolsFree, Toolssingl, WateringDAta, WateringDelitem, WateringFree, Wateringsingl, WinterfulesDAta, WinterfulesDelitem, WinterfulesFree, Winterfulessingl, fertilizerDAta, fertilizerDelitem, fertilizerFree, fertilizersingl, furniturDAta, furniturDelitem, furniturFree, furnitursingl } from "../Controller/Gardening/Gardeninggetting.js";
-import { GiftDAta, GiftDelitem, GiftFree, Giftsingl, HairDAta, HairDelitem, HairFree, Hairsingl, HandDAta, HandDelitem, HandFree, Handsingl } from "../Controller/Tolitries/Tolitriesgetting.js";
+import { GiftDAta, GiftDelitem, GiftFree, Giftsingl, HairDAta, HairDelitem, HairFree, Hairsingl, HandDAta, HandDelitem, HandFree, Handsingl, HealthDAta, HealthDelitem, HealthFree, Healthsingl, MouthDAta, MouthDelitem, MouthFree, Mouthsingl, PerfumesDAta, PerfumesDelitem, PerfumesFree, Perfumessingl, SanitaryDAta, SanitaryDelitem, SanitaryFree, Sanitarysingl, SavingDAta, SavingDelitem, SavingFree, Savingsingl, ShampoDAta, ShampoDelitem, ShampoFree, Shamposingl, ShowergelDAta, ShowergelDelitem, ShowergelFree, Showergelsingl, SkincareDAta, SkincareDelitem, SkincareFree, Skincaresingl } from "../Controller/Tolitries/Tolitriesgetting.js";
 
 const router = express.Router()
 
@@ -947,4 +947,44 @@ router.get("/handuser", HandDAta )
 router.get("/handfreedelivery",HandFree)
 router.delete("/handuserid/:id", HandDelitem)
 router.get('/handsingle/:id' , Handsingl)
+
+router.get("/healthuser", HealthDAta )
+router.get("/healthfreedelivery",HealthFree)
+router.delete("/healthuserid/:id", HealthDelitem)
+router.get('/healthsingle/:id' , Healthsingl)
+
+router.get("/mouthuser", MouthDAta )
+router.get("/mouthfreedelivery",MouthFree)
+router.delete("/mouthuserid/:id", MouthDelitem)
+router.get('/mouthsingle/:id' , Mouthsingl)
+
+router.get("/perfumeuser", PerfumesDAta )
+router.get("/perfumefreedelivery",PerfumesFree)
+router.delete("/perfumeuserid/:id",PerfumesDelitem )
+router.get('/perfumesingle/:id' , Perfumessingl)
+
+router.get("/sanitaryuser", SanitaryDAta )
+router.get("/sanitaryfreedelivery",SanitaryFree)
+router.delete("/sanitaryuserid/:id", SanitaryDelitem)
+router.get('/sanitarysingle/:id' , Sanitarysingl)
+
+router.get("/savinguser", SavingDAta )
+router.get("/savingfreedelivery",SavingFree)
+router.delete("/savinguserid/:id", SavingDelitem)
+router.get('/savingsingle/:id' , Savingsingl)
+
+router.get("/shampouser", ShampoDAta )
+router.get("/shampofreedelivery",ShampoFree)
+router.delete("/shampouserid/:id", ShampoDelitem)
+router.get('/shamposingle/:id' , Shamposingl)
+
+router.get("/skincareuser", SkincareDAta )
+router.get("/skincarefreedelivery",SkincareFree)
+router.delete("/skincareuserid/:id", SkincareDelitem)
+router.get('/skincaresingle/:id' , Skincaresingl)
+
+router.get("/showergeluser", ShowergelDAta)
+router.get("/showergelfreedelivery", ShowergelFree)
+router.delete("/showergeluserid/:id", ShowergelDelitem)
+router.get('/showergelsingle/:id' , Showergelsingl)
 export default router
