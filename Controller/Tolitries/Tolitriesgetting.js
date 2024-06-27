@@ -9,6 +9,9 @@ import SavingSchema from '../../config/Tolitries/Saving.js'
 import ShampoSchema from '../../config/Tolitries/Shampo.js'
 import ShowerSchema from '../../config/Tolitries/Showergel.js'
 import SkincareSchema from '../../config/Tolitries/Skincare.js'
+import SoapbarrSchema from '../../config/Tolitries/Soapbar.js'
+import ToothbrushSchema from '../../config/Tolitries/Toothbrush.js'
+import ToothpastSchema from '../../config/Tolitries/Toothpast.js'
 export const GiftDAta = async(req,res)=>{
     let result = await GiftsetsSchema.find()
   return  res.send(result)
@@ -270,5 +273,77 @@ if(data){
 }
 export const Skincaresingl =async (req, res) => {
   let result = await SkincareSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const SoapbarDAta = async(req,res)=>{
+  let result = await SoapbarrSchema.find()
+return  res.send(result)
+}
+export const SoapbarFree = async(req,res)=>{
+let result = await SoapbarrSchema.find()
+return  res.send(result)
+}
+export const SoapbarDelitem = async (req,res)=>{
+let data = await SoapbarrSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Soapbarsingl =async (req, res) => {
+  let result = await SoapbarrSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const ToothbrushDAta = async(req,res)=>{
+  let result = await ToothbrushSchema.find()
+return  res.send(result)
+}
+export const ToothbrushFree = async(req,res)=>{
+let result = await ToothbrushSchema.find()
+return  res.send(result)
+}
+export const ToothbrushDelitem = async (req,res)=>{
+let data = await ToothbrushSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Toothbrushsingl =async (req, res) => {
+  let result = await ToothbrushSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const ToothpastDAta = async(req,res)=>{
+  let result = await ToothpastSchema.find()
+return  res.send(result)
+}
+export const ToothpastFree = async(req,res)=>{
+let result = await ToothpastSchema.find()
+return  res.send(result)
+}
+export const ToothpastDelitem = async (req,res)=>{
+let data = await ToothpastSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Toothpastsingl =async (req, res) => {
+  let result = await ToothpastSchema.findOne({_id: req.params.id})
   return res.send(result)
 }

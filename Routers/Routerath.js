@@ -11,13 +11,13 @@ import { Bagslsingl, Basketstsingl, Glovessingl, Mopssingl, Spongesingl } from "
 import { Barrientproducts, Barrientupl, Bartolinproducts, Bartolinupl, Birdbrandproducts, Birdbrandupl, Blackproducts, Blackupl, Bonitproducts, Bonitupl, Bostikproducts, Bostikupl, Briwaxproducts, Briwaxsiglget, Briwaxupl, Brookproducts, Brooksiglget, Brookupl, Carplanproducts, Carplansiglget, Carplanupl, Carproproducts, Carprosiglget, Carproupl, Chomisproducts, Chomissiglget, Chomisupl, Commandproducts, Commandsiglget, Commandupl, Coralproducts, Coralsiglget, Coralupl, Crownproducts, Crownsiglget, Crownupl, Darperproducts, Darpersiglget, Darperupl, Dektonproducts, Dektonsiglget, Dektonupl, Demsumproducts, Demsumsiglget, Demsumupl, Edcoproducts, Edcosiglget, Edcoupl, Everproducts, Eversiglget, Everupl, Exitexproducts, Exitexsiglget, Exitexupl, Fitproducts, Fitsiglget, Fitupl, Gasproducts, Gassiglget, Gasupl, Globalproducts, Globalsiglget, Globalupl, Gorilaproducts, Gorilasiglget, Gorilaupl, Hagesanproducts, Hagesansiglget, Hagesanupl, Hardwareproducts, Hardwaresiglget, Hardwareupl, Harrisproducts, Harrissiglget, Harrisupl, Hilkaproducts, Hilkasiglget, Hilkaupl, Humnrolproducts, Humnrolsiglget, Humnrolupl, Jbwelproducts, Jbwelsiglget, Jbwelupl, Kilrockproducts, Kilrocksiglget, Kilrockupl, Ladderproducts, Laddersiglget, Ladderupl, Locktileproducts, Locktilesiglget, Locktileupl } from "../Controller/Diy/Diypost.js"
 import { Barrientsingl, Bartolinsingl, Birdbrandsingl, Blacksingl, Bonitsingl, Bostiksingl, Laddersingl } from "../Controller/Diy/Diygeeting.js"
 import { Amtechproducts, Amtechsiglget, Amtechupl, Antiquxproducts, Antiquxsiglget, Antiquxupl, Lynwoodproducts, Lynwoodsiglget, Lynwoodupl, Oxfordproducts, Oxfordsiglget, Oxfordupl, Pestcoproducts, Pestcosiglget, Pestcoupl, Plasplugproducts, Plasplugsiglget, Plasplugupl, Primacarproducts, Primacarsiglget, Primacarupl, Rolsonproducts, Rolsonsiglget, Rolsonupl, Ronsealproducts, Ronsealsiglget, Ronsealupl, Rustinsproducts, Rustinssiglget, Rustinsupl, Secrupproducts, Secrupsiglget, Secrupupl, Securitproducts, Securitsiglget, Securitupl, Shortageproducts, Shortagesiglget, Shortageupl, Soudalproducts, Soudalsiglget, Soudalupl, Starpackproducts, Starpacksiglget, Starpackupl, Sterlingproducts, Sterlingsiglget, Sterlingupl, Ultratapeproducts, Ultratapesiglget, Ultratapeupl, Uniconproducts, Uniconsiglget, Uniconupl, Vacuumproducts, Vacuumsiglget, Vacuumupl, Velcroproducts, Velcrosiglget, Velcroupl, Vfmpaintproducts, Vfmpaintsiglget, Vfmpaintupl, Wd40products, Wd40siglget, Wd40upl, Wernerproducts, Wernersiglget, Wernerupl, Yelelockproducts, Yelelocksiglget, Yelelockupl, tableauproducts, tableausiglget, tableauupl, tricycleproducts, tricyclesiglget, tricycleupl } from "../Controller/Diy/Diypostto.js"
-import { PlasplugDAta, Yelelocksingl, tricycleFree, tricyclesingl } from "../Controller/Diy/Diygettingto.js"
+
 import { Breadproducts, Breadsiglget, Breadupl, Cateringproducts, Cateringsiglget, Cateringupl, Chromeproducts, Chromesiglget, Chromeupl, Cookwarproducts, Cookwarsiglget, Cookwarupl, Culteryproducts, Culterysiglget, Culteryupl, Kettlesproducts, Kettlessiglget, Kettlesupl, Kitechnaccproducts, Kitechnaccsiglget, Kitechnaccupl, Kitechnbinproducts, Kitechnbinsiglget, Kitechnbinupl, Kitechngaproducts, Kitechngasiglget, Kitechngaupl, Kitechnkniproducts, Kitechnknisiglget, Kitechnkniupl, Plastickitehenproducts, Plastickitehensiglget, Plastickitehenupl, Scalekitehenproducts, Scalekitehensiglget, Scalekitehenupl, Simplehumanproducts, Simplehumansiglget, Simplehumanupl, Teaproducts, Teasiglget, Teaupl, Trayproducts, Traysiglget, Trayupl, Waterproducts, Watersiglget, Waterupl, Woodenproducts, Woodensiglget, Woodenupl } from "../Controller/Kitechenware/Kitechenwearpost.js"
-import { Scalekitehensingl } from "../Controller/Kitechenware/Kitechenweargetting.js"
+
 import { Camingproducts, Camingsiglget, Camingupl, Furniturproducts, Furnitursiglget, Furniturupl, Giftwareproducts, Giftwaresiglget, Giftwareupl, Growingproducts, Growingsiglget, Growingupl, Lighteningproducts, Lighteningsiglget, Lighteningupl, Plantersproducts, Planterssiglget, Plantersupl, Toolsproducts, Toolssiglget, Toolsupl, Wateringproducts, Wateringsiglget, Wateringupl, Winterfulesproducts, Winterfulessiglget, Winterfulesupl, fertilizerproducts, fertilizersiglget, fertilizerupl } from "../Controller/Gardening/Gardeningpost.js"
-import { GrowingDAta } from "../Controller/Gardening/Gardeninggetting.js"
-import { Giftproducts, Giftsiglget, Giftupl, Hairproducts, Hairsiglget, Hairupl, Handproducts, Handsiglget, Handupl, Healthproducts, Healthsiglget, Healthupl, Mouthproducts, Mouthsiglget, Mouthupl, Perfumesproducts, Perfumessiglget, Perfumesupl, Sanitaryproducts, Sanitarysiglget, Sanitaryupl, Savingproducts, Savingsiglget, Savingupl, Shampoproducts, Shamposiglget, Shampoupl, Showergelpl, Showergelproducts, Showergelsiglget, Skincareproducts, Skincaresiglget, Skincareupl } from "../Controller/Tolitries/Tolitriespost.js"
-import { HairDAta, HandDAta, HandFree, SavingDAta, SavingFree, ShampoDAta, ShampoFree, ShowergelDAta, ShowergelFree } from "../Controller/Tolitries/Tolitriesgetting.js"
+
+import { Giftproducts, Giftsiglget, Giftupl, Hairproducts, Hairsiglget, Hairupl, Handproducts, Handsiglget, Handupl, Healthproducts, Healthsiglget, Healthupl, Mouthproducts, Mouthsiglget, Mouthupl, Perfumesproducts, Perfumessiglget, Perfumesupl, Sanitaryproducts, Sanitarysiglget, Sanitaryupl, Savingproducts, Savingsiglget, Savingupl, Shampoproducts, Shamposiglget, Shampoupl, Showergelpl, Showergelproducts, Showergelsiglget, Skincareproducts, Skincaresiglget, Skincareupl, Soapbarproducts, Soapbarsiglget, Soapbarupl, Toothbrushproducts, Toothbrushsiglget, Toothbrushupl, Toothpastproducts, Toothpastsiglget, Toothpastupl } from "../Controller/Tolitries/Tolitriespost.js"
+
 
  const router = express.Router()
 
@@ -797,5 +797,19 @@ import { HairDAta, HandDAta, HandFree, SavingDAta, SavingFree, ShampoDAta, Shamp
  router.put("/skincaresingle/:id",uploads.single('image'), Skincareupl)
  router.get("/skincaresingle/:id" , Skincaresiglget)
 
+ router.post("/soapbarproducts" ,uploads.single('image') , Soapbarproducts )
+ router.put("/soapbarsingle/:id",uploads.single('image'), Soapbarupl)
+ router.get("/soapbarsingle/:id" , Soapbarsiglget)
 
+ router.post("/toothbrushproducts" ,uploads.single('image') , Toothbrushproducts )
+ router.put("/toothbrushsingle/:id",uploads.single('image'), Toothbrushupl)
+ router.get("/toothbrushsingle/:id" , Toothbrushsiglget)
+ 
+ router.post("/toothbrushproducts" ,uploads.single('image') , Toothbrushproducts )
+ router.put("/toothbrushsingle/:id",uploads.single('image'), Toothbrushupl)
+ router.get("/toothbrushsingle/:id" , Toothbrushsiglget)
+ 
+ router.post("/toothpastproducts" ,uploads.single('image') , Toothpastproducts )
+ router.put("/toothpastsingle/:id",uploads.single('image'), Toothpastupl)
+ router.get("/toothpastsingle/:id" , Toothpastsiglget)
  export default router

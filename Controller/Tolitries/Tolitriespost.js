@@ -9,6 +9,10 @@ import SavingSchema from '../../config/Tolitries/Saving.js'
 import ShampoSchema from '../../config/Tolitries/Shampo.js'
 import ShowerSchema from '../../config/Tolitries/Showergel.js'
 import SkincareSchema from '../../config/Tolitries/Skincare.js'
+import SoapbarrSchema from '../../config/Tolitries/Soapbar.js'
+import ToothbrushSchema from '../../config/Tolitries/Toothbrush.js'
+import ToothpastSchema from '../../config/Tolitries/Toothpast.js'
+
 export const Giftproducts= async(req ,res)=>{
     try {
         let  {name , title , price } = req.body 
@@ -589,4 +593,163 @@ export const Skincareupl= async (req, res) => {
 export const Skincaresiglget=  async (req,res)=>{
     let result = await  SkincareSchema.findOne({_id:req.params.id})
     res.send(result)
-  }
+  }  
+       
+export const Soapbarproducts= async(req ,res)=>{
+    try {
+        let  {name , title , price } = req.body 
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const newuser = await new  SoapbarrSchema({
+            name,
+            title,
+            price,
+            image: profilepicturePath,
+        }).save() 
+
+       
+        if(newuser){
+            return res.status(200).send({Message:"product added Successfully"})
+        }else{
+            console.log(error)
+        }
+    } catch (error) {
+        
+    }
+}
+export const Soapbarupl= async (req, res) => {
+    try {
+        let { name, title, price } = req.body;
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const product = await  SoapbarrSchema.findOne({ _id: req.params.id });
+        if (!product) {
+            return res.status(404).json({ error: "Product not found" });
+        }
+        product.name = name || product.name;
+        product.title = title || product.title;
+        product.price = price || product.price;
+        if (profilepicturePath) {
+            product.image = profilepicturePath;
+        }
+        const updatedProduct = await product.save();
+        res.status(200).json({ message: "Product updated successfully", product: updatedProduct });
+    } catch (error) {
+        console.error("Error updating product:", error);
+        res.status(500).json({ error: "Failed to update product" });
+    }
+}
+export const Soapbarsiglget=  async (req,res)=>{
+    let result = await  SoapbarrSchema.findOne({_id:req.params.id})
+    res.send(result)
+  } 
+        
+export const Toothbrushproducts= async(req ,res)=>{
+    try {
+        let  {name , title , price } = req.body 
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const newuser = await new  ToothbrushSchema({
+            name,
+            title,
+            price,
+            image: profilepicturePath,
+        }).save() 
+
+       
+        if(newuser){
+            return res.status(200).send({Message:"product added Successfully"})
+        }else{
+            console.log(error)
+        }
+    } catch (error) {
+        
+    }
+}
+export const Toothbrushupl= async (req, res) => {
+    try {
+        let { name, title, price } = req.body;
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const product = await  ToothbrushSchema.findOne({ _id: req.params.id });
+        if (!product) {
+            return res.status(404).json({ error: "Product not found" });
+        }
+        product.name = name || product.name;
+        product.title = title || product.title;
+        product.price = price || product.price;
+        if (profilepicturePath) {
+            product.image = profilepicturePath;
+        }
+        const updatedProduct = await product.save();
+        res.status(200).json({ message: "Product updated successfully", product: updatedProduct });
+    } catch (error) {
+        console.error("Error updating product:", error);
+        res.status(500).json({ error: "Failed to update product" });
+    }
+}
+export const Toothbrushsiglget=  async (req,res)=>{
+    let result = await  ToothbrushSchema.findOne({_id:req.params.id})
+    res.send(result)
+  } 
+     
+export const Toothpastproducts= async(req ,res)=>{
+    try {
+        let  {name , title , price } = req.body 
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const newuser = await new  ToothpastSchema({
+            name,
+            title,
+            price,
+            image: profilepicturePath,
+        }).save() 
+
+       
+        if(newuser){
+            return res.status(200).send({Message:"product added Successfully"})
+        }else{
+            console.log(error)
+        }
+    } catch (error) {
+        
+    }
+}
+export const Toothpastupl= async (req, res) => {
+    try {
+        let { name, title, price } = req.body;
+        let profilepicturePath = '';
+        if (req.file) {
+            profilepicturePath = req.file.path;
+        }
+        const product = await  ToothpastSchema.findOne({ _id: req.params.id });
+        if (!product) {
+            return res.status(404).json({ error: "Product not found" });
+        }
+        product.name = name || product.name;
+        product.title = title || product.title;
+        product.price = price || product.price;
+        if (profilepicturePath) {
+            product.image = profilepicturePath;
+        }
+        const updatedProduct = await product.save();
+        res.status(200).json({ message: "Product updated successfully", product: updatedProduct });
+    } catch (error) {
+        console.error("Error updating product:", error);
+        res.status(500).json({ error: "Failed to update product" });
+    }
+}
+export const Toothpastsiglget=  async (req,res)=>{
+    let result = await  ToothpastSchema.findOne({_id:req.params.id})
+    res.send(result)
+  } 
