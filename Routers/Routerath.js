@@ -16,7 +16,7 @@ import { Breadproducts, Breadsiglget, Breadupl, Cateringproducts, Cateringsiglge
 
 import { Camingproducts, Camingsiglget, Camingupl, Furniturproducts, Furnitursiglget, Furniturupl, Giftwareproducts, Giftwaresiglget, Giftwareupl, Growingproducts, Growingsiglget, Growingupl, Lighteningproducts, Lighteningsiglget, Lighteningupl, Plantersproducts, Planterssiglget, Plantersupl, Toolsproducts, Toolssiglget, Toolsupl, Wateringproducts, Wateringsiglget, Wateringupl, Winterfulesproducts, Winterfulessiglget, Winterfulesupl, fertilizerproducts, fertilizersiglget, fertilizerupl } from "../Controller/Gardening/Gardeningpost.js"
 
-import { Giftproducts, Giftsiglget, Giftupl, Hairproducts, Hairsiglget, Hairupl, Handproducts, Handsiglget, Handupl, Healthproducts, Healthsiglget, Healthupl, Mouthproducts, Mouthsiglget, Mouthupl, Perfumesproducts, Perfumessiglget, Perfumesupl, Sanitaryproducts, Sanitarysiglget, Sanitaryupl, Savingproducts, Savingsiglget, Savingupl, Shampoproducts, Shamposiglget, Shampoupl, Showergelpl, Showergelproducts, Showergelsiglget, Skincareproducts, Skincaresiglget, Skincareupl, Soapbarproducts, Soapbarsiglget, Soapbarupl, Toothbrushproducts, Toothbrushsiglget, Toothbrushupl, Toothpastproducts, Toothpastsiglget, Toothpastupl } from "../Controller/Tolitries/Tolitriespost.js"
+import { Africaproducts, Africasiglget, Africaupl, Dordantproducts, Dordantsiglget, Dordantupl, Giftproducts, Giftsiglget, Giftupl, Hairproducts, Hairsiglget, Hairupl, Handproducts, Handsiglget, Handupl, Healthproducts, Healthsiglget, Healthupl, Mouthproducts, Mouthsiglget, Mouthupl, Perfumesproducts, Perfumessiglget, Perfumesupl, Sanitaryproducts, Sanitarysiglget, Sanitaryupl, Savingproducts, Savingsiglget, Savingupl, Shampoproducts, Shamposiglget, Shampoupl, Showergelpl, Showergelproducts, Showergelsiglget, Skincareproducts, Skincaresiglget, Skincareupl, Soapbarproducts, Soapbarsiglget, Soapbarupl, Toothbrushproducts, Toothbrushsiglget, Toothbrushupl, Toothpastproducts, Toothpastsiglget, Toothpastupl } from "../Controller/Tolitries/Tolitriespost.js"
 
 
  const router = express.Router()
@@ -812,4 +812,12 @@ import { Giftproducts, Giftsiglget, Giftupl, Hairproducts, Hairsiglget, Hairupl,
  router.post("/toothpastproducts" ,uploads.single('image') , Toothpastproducts )
  router.put("/toothpastsingle/:id",uploads.single('image'), Toothpastupl)
  router.get("/toothpastsingle/:id" , Toothpastsiglget)
+ 
+ router.post("/dordantproducts" ,uploads.single('image') , Dordantproducts )
+ router.put("/dordantsingle/:id",uploads.single('image'), Dordantupl)
+ router.get("/dordantsingle/:id" , Dordantsiglget)  
+ 
+ router.post("/africaproducts" ,uploads.single('image') , Africaproducts )
+ router.put("/africasingle/:id",uploads.single('image'), Africaupl)
+ router.get("/africasingle/:id" , Africasiglget) 
  export default router

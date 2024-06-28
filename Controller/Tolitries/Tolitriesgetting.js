@@ -12,6 +12,8 @@ import SkincareSchema from '../../config/Tolitries/Skincare.js'
 import SoapbarrSchema from '../../config/Tolitries/Soapbar.js'
 import ToothbrushSchema from '../../config/Tolitries/Toothbrush.js'
 import ToothpastSchema from '../../config/Tolitries/Toothpast.js'
+import DordantSchema from '../../config/Tolitries/Dordant.js'
+import AfricaSchema from '../../config/Tolitries/Africa.js'
 export const GiftDAta = async(req,res)=>{
     let result = await GiftsetsSchema.find()
   return  res.send(result)
@@ -345,5 +347,53 @@ if(data){
 }
 export const Toothpastsingl =async (req, res) => {
   let result = await ToothpastSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const DordantDAta = async(req,res)=>{
+  let result = await DordantSchema.find()
+return  res.send(result)
+}
+export const DordantFree = async(req,res)=>{
+let result = await DordantSchema.find()
+return  res.send(result)
+}
+export const DordantDelitem = async (req,res)=>{
+let data = await DordantSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Dordantsingl =async (req, res) => {
+  let result = await DordantSchema.findOne({_id: req.params.id})
+  return res.send(result)
+}
+
+export const AfricaDAta = async(req,res)=>{
+  let result = await AfricaSchema.find()
+return  res.send(result)
+}
+export const AfricaFree = async(req,res)=>{
+let result = await AfricaSchema.find()
+return  res.send(result)
+}
+export const AfricaDelitem = async (req,res)=>{
+let data = await AfricaSchema.deleteOne({_id:req.params.id})
+if(data){
+  return res.send(data)
+}else{
+  res.status(400).send({
+      success: false,
+      message: 'Error in Deletion or no data available',
+  })
+}
+}
+export const Africasingl =async (req, res) => {
+  let result = await AfricaSchema.findOne({_id: req.params.id})
   return res.send(result)
 }
