@@ -17,6 +17,7 @@ import { Breadproducts, Breadsiglget, Breadupl, Cateringproducts, Cateringsiglge
 import { Camingproducts, Camingsiglget, Camingupl, Furniturproducts, Furnitursiglget, Furniturupl, Giftwareproducts, Giftwaresiglget, Giftwareupl, Growingproducts, Growingsiglget, Growingupl, Lighteningproducts, Lighteningsiglget, Lighteningupl, Plantersproducts, Planterssiglget, Plantersupl, Toolsproducts, Toolssiglget, Toolsupl, Wateringproducts, Wateringsiglget, Wateringupl, Winterfulesproducts, Winterfulessiglget, Winterfulesupl, fertilizerproducts, fertilizersiglget, fertilizerupl } from "../Controller/Gardening/Gardeningpost.js"
 
 import { Africaproducts, Africasiglget, Africaupl, Dordantproducts, Dordantsiglget, Dordantupl, Giftproducts, Giftsiglget, Giftupl, Hairproducts, Hairsiglget, Hairupl, Handproducts, Handsiglget, Handupl, Healthproducts, Healthsiglget, Healthupl, Mouthproducts, Mouthsiglget, Mouthupl, Perfumesproducts, Perfumessiglget, Perfumesupl, Sanitaryproducts, Sanitarysiglget, Sanitaryupl, Savingproducts, Savingsiglget, Savingupl, Shampoproducts, Shamposiglget, Shampoupl, Showergelpl, Showergelproducts, Showergelsiglget, Skincareproducts, Skincaresiglget, Skincareupl, Soapbarproducts, Soapbarsiglget, Soapbarupl, Toothbrushproducts, Toothbrushsiglget, Toothbrushupl, Toothpastproducts, Toothpastsiglget, Toothpastupl } from "../Controller/Tolitries/Tolitriespost.js"
+import { Fathersdayproducts, Fathersdaysiglget, Fathersdayupl, Frammirrorproducts, Frammirrorsiglget, Frammirrorupl, Giftwarehproducts, Giftwarehsiglget, Giftwarehupl, Incenseproducts, Incensesiglget, Incenseupl, Memorialproducts, Memorialsiglget, Memorialupl } from "../Controller/Home&decor/Homepost.js"
 
 
  const router = express.Router()
@@ -820,4 +821,24 @@ import { Africaproducts, Africasiglget, Africaupl, Dordantproducts, Dordantsiglg
  router.post("/africaproducts" ,uploads.single('image') , Africaproducts )
  router.put("/africasingle/:id",uploads.single('image'), Africaupl)
  router.get("/africasingle/:id" , Africasiglget) 
+ 
+ router.post("/fathersdayproducts" ,uploads.single('image') , Fathersdayproducts )
+ router.put("/fathersdaysingle/:id",uploads.single('image'), Fathersdayupl)
+ router.get("/fathersdaysingle/:id" , Fathersdaysiglget) 
+ 
+ router.post("/frammirrorproducts" ,uploads.single('image') , Frammirrorproducts )
+ router.put("/frammirrorsingle/:id",uploads.single('image'), Frammirrorupl)
+ router.get("/frammirrorsingle/:id" , Frammirrorsiglget) 
+ 
+ router.post("/giftwarehproducts" ,uploads.single('image') , Giftwarehproducts )
+ router.put("/giftwarehsingle/:id",uploads.single('image'), Giftwarehupl)
+ router.get("/giftwarehsingle/:id" , Giftwarehsiglget) 
+ 
+ router.post("/incenseproducts" ,uploads.single('image') , Incenseproducts )
+ router.put("/incensesingle/:id",uploads.single('image'), Incenseupl)
+ router.get("/incensesingle/:id" , Incensesiglget) 
+ 
+ router.post("/memorialproducts" ,uploads.single('image') , Memorialproducts )
+ router.put("/memorialsingle/:id",uploads.single('image'), Memorialupl)
+ router.get("/memorialsingle/:id" , Memorialsiglget) 
  export default router

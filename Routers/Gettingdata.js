@@ -9,6 +9,7 @@ import { AmtechDAta, AmtechDelitem, AmtechFree, Amtechsingl, AntiquxDAta, Antiqu
 import { BreadDAta, BreadDelitem, BreadFree, Breadsingl, CateringDAta, CateringDelitem, CateringFree, Cateringsingl, ChromeDAta, ChromeDelitem, ChromeFree, Chromesingl, CookwarDAta, CookwarDelitem, CookwarFree, Cookwarsingl, CulteryDAta, CulteryDelitem, CulteryFree, Culterysingl, KettlesDAta, KettlesDelitem, KettlesFree, Kettlessingl, KitechnaccDAta, KitechnaccDelitem, KitechnaccFree, Kitechnaccsingl, KitechnbinDAta, KitechnbinDelitem, KitechnbinFree, Kitechnbinsingl, KitechngaDAta, KitechngaDelitem, KitechngaFree, Kitechngasingl, KitechnkniDAta, KitechnkniDelitem, KitechnkniFree, Kitechnknisingl, PlastickitehenDAta, PlastickitehenDelitem, PlastickitehenFree, Plastickitehensingl, ScalekitehenDAta, ScalekitehenDelitem, ScalekitehenFree, Scalekitehensingl, SimplehumanDAta, SimplehumanDelitem, SimplehumanFree, Simplehumansingl, TeaDAta, TeaDelitem, TeaFree, Teasingl, TrayDAta, TrayDelitem, TrayFree, Traysingl, WaterDAta, WaterDelitem, WaterFree, Watersingl, WoodenDAta, WoodenDelitem, WoodenFree, Woodensingl } from "../Controller/Kitechenware/Kitechenweargetting.js";
 import { CamingDAta, CamingDelitem, CamingFree, Camingsingl, GiftwareDAta, GiftwareDelitem, GiftwareFree, Giftwaresingl, GrowingDAta, GrowingDelitem, GrowingFree, Growingsingl, LighteningDAta, LighteningDelitem, LighteningFree, Lighteningsingl, PlantersDAta, PlantersDelitem, PlantersFree, Planterssingl, ToolsDAta, ToolsDelitem, ToolsFree, Toolssingl, WateringDAta, WateringDelitem, WateringFree, Wateringsingl, WinterfulesDAta, WinterfulesDelitem, WinterfulesFree, Winterfulessingl, fertilizerDAta, fertilizerDelitem, fertilizerFree, fertilizersingl, furniturDAta, furniturDelitem, furniturFree, furnitursingl } from "../Controller/Gardening/Gardeninggetting.js";
 import { AfricaDAta, AfricaDelitem, AfricaFree, Africasingl, DordantDAta, DordantDelitem, DordantFree, Dordantsingl, GiftDAta, GiftDelitem, GiftFree, Giftsingl, HairDAta, HairDelitem, HairFree, Hairsingl, HandDAta, HandDelitem, HandFree, Handsingl, HealthDAta, HealthDelitem, HealthFree, Healthsingl, MouthDAta, MouthDelitem, MouthFree, Mouthsingl, PerfumesDAta, PerfumesDelitem, PerfumesFree, Perfumessingl, SanitaryDAta, SanitaryDelitem, SanitaryFree, Sanitarysingl, SavingDAta, SavingDelitem, SavingFree, Savingsingl, ShampoDAta, ShampoDelitem, ShampoFree, Shamposingl, ShowergelDAta, ShowergelDelitem, ShowergelFree, Showergelsingl, SkincareDAta, SkincareDelitem, SkincareFree, Skincaresingl, SoapbarDAta, SoapbarDelitem, SoapbarFree, Soapbarsingl, ToothbrushDAta, ToothbrushDelitem, ToothbrushFree, Toothbrushsingl, ToothpastDAta, ToothpastDelitem, ToothpastFree, Toothpastsingl } from "../Controller/Tolitries/Tolitriesgetting.js";
+import { FathersdayDAta, FathersdayDelitem, FathersdayFree, Fathersdaysingl, FrammirrorDAta, FrammirrorDelitem, FrammirrorFree, Frammirrorsingl, GiftwarehDAta, GiftwarehDelitem, GiftwarehFree, Giftwarehsingl, IncenseDAta, IncenseDelitem, IncenseFree, Incensesingl, MemorialDAta, MemorialDelitem, MemorialFree, Memorialsingl } from "../Controller/Home&decor/Homegetting.js";
 
 const router = express.Router()
 
@@ -1011,4 +1012,29 @@ router.get("/africauser", AfricaDAta)
 router.get("/africafreedelivery", AfricaFree)
 router.delete("/africauserid/:id", AfricaDelitem)
 router.get('/africasingle/:id' , Africasingl)
+
+router.get("/fathersdayuser", FathersdayDAta)
+router.get("/fathersdayfreedelivery", FathersdayFree)
+router.delete("/fathersdayuserid/:id", FathersdayDelitem)
+router.get('/fathersdaysingle/:id' , Fathersdaysingl)
+
+router.get("/frammirroruser", FrammirrorDAta)
+router.get("/frammirrorfreedelivery", FrammirrorFree)
+router.delete("/frammirroruserid/:id", FrammirrorDelitem)
+router.get('/frammirrorsingle/:id' , Frammirrorsingl)
+
+router.get("/giftwarehuser", GiftwarehDAta)
+router.get("/giftwarehfreedelivery", GiftwarehFree)
+router.delete("/giftwarehuserid/:id", GiftwarehDelitem)
+router.get('/giftwarehsingle/:id' , Giftwarehsingl)
+
+router.get("/incenseuser", IncenseDAta)
+router.get("/incensefreedelivery", IncenseFree)
+router.delete("/incenseuserid/:id", IncenseDelitem)
+router.get('/incensesingle/:id' , Incensesingl)
+
+router.get("/memorialuser", MemorialDAta)
+router.get("/memorialfreedelivery", MemorialFree)
+router.delete("/memorialuserid/:id", MemorialDelitem)
+router.get('/memorialsingle/:id' , Memorialsingl)
 export default router
